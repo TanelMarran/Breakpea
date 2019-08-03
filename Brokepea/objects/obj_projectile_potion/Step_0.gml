@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth = -y;
+
 if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 22)) {
 	var _list = ds_list_create();
-	collision_circle_list(x,y,15,obj_enemy,false,true,_list,false);
+	collision_circle_list(x,y,blast_radius,obj_enemy,false,true,_list,false);
 	for(var i = 0; i < ds_list_size(_list); i++) {
 		with(ds_list_find_value(_list,i)) {
 				apply_damage();

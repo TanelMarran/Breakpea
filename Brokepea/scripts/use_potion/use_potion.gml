@@ -1,4 +1,3 @@
-//switch()
 with(obj_player) {
 	rest = 10;
 	var len = 4;

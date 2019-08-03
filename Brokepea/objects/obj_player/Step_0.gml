@@ -5,6 +5,8 @@ if(gamefreeze != 0) {
 	exit;
 }
 
+carry_cooldown_time = max(0,carry_cooldown_time-1);
+
 get_damaged();
 
 event_inherited();

@@ -12,6 +12,8 @@ carry_magnitude = 2;
 carry_x = lengthdir_x(carry_height,90)
 carry_y = lengthdir_x(carry_height,90)
 carry_speed = 0.8;
+carry_cooldown = 15;
+carry_cooldown_time = 0;
 
 stamina_max = 75;
 stamina_buildup = 0;

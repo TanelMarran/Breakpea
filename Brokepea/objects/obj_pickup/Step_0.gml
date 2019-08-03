@@ -13,9 +13,10 @@ pickup_cooldown = max(0,pickup_cooldown-1);
 
 if(on_ground) {
 	depth = -y;
-	if(place_meeting(x,y,obj_player) && pickup_cooldown == 0) {
+	if(place_meeting(x,y,obj_player) && obj_player.carry_cooldown_time = 0) {
 		on_ground = false;
 		obj_player.carry = id;
+		obj_player.carry_cooldown_time = obj_player.carry_cooldown;
 	}
 } else {
 	depth = obj_player.depth;

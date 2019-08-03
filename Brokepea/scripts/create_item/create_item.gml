@@ -9,14 +9,18 @@ repeat(10) {
 	ds_list_destroy(_list);
 	
 	_list = ds_list_create();
-	count = count-collision_circle_list(randx,randy,100,obj_pickup,false,true,_list,false);
+	count = count-collision_circle_list(randx,randy,125,obj_pickup,false,true,_list,false);
 	ds_list_destroy(_list);
 
-	if (count > 2 && irandom(20)) {
-		object = obj_sword;
+	if (count > 2 && irandom(40)) {
+		object = obj_rock;
 	}
 
-	if count > 5 {
+	if (count > 3 && irandom(20)) {
+		object = obj_potion;
+	}
+	
+	if count > 4 {
 		object = obj_potion;
 	}
 

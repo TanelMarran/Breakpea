@@ -52,6 +52,6 @@ y += axis_y;
 if (hp <= 0 && !defeated) {
 	enemy_defeated();
 }
-if(defeated and z == 0) {
+if(defeated and z <= 9 and axis_z < 0) {
 	instance_destroy();
 }
