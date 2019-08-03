@@ -1,8 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(gamefreeze != 0) {
+	exit;
+}
+
 //Get user inputs
 get_inputs();
+
+depth = -y;
 
 move_dir = point_direction(0,0,right_press-left_press,down_press-up_press);
 move_spd = point_distance(0,0,right_press-left_press,down_press-up_press)*movement_speed;

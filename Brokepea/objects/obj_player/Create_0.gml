@@ -2,6 +2,16 @@
 // You can write your code in this editor
 init_movement();
 
+shadow_height = 10;
+shadow_width = sprite_width;
+
+carry = noone;
+carry_height = sprite_height+5;
+carry_magnitude = 30;
+carry_x = lengthdir_x(carry_height,90)
+carry_y = lengthdir_x(carry_height,90)
+
+
 key_right = ord("D");
 key_left = ord("A");
 key_up = ord("W");

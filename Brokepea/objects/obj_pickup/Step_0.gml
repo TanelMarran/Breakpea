@@ -1,0 +1,35 @@
+/// @description Insert description here
+// You can write your code in this editor
+if(gamefreeze != 0) {
+	exit;
+}
+
+apply_movement();
+
+x += axis_x;
+y += axis_y;
+
+pickup_cooldown = max(0,pickup_cooldown-1);
+
+if(on_ground) {
+	depth = -y;
+	if(place_meeting(x,y,obj_player) && pickup_cooldown == 0) {
+		on_ground = false;
+		obj_player.carry = id;
+	}
+} else {
+	depth = obj_player.depth;
+	x += (obj_player.x+obj_player.carry_x-x)*0.8;
+	y += (obj_player.y+obj_player.carry_y-y)*0.8;
+	if(obj_player.carry != id) {
+		on_ground = true;
+		pickup_cooldown = 30;
+		var dir = irandom(360);
+		var dist = random(4);
+		axis_x = lengthdir_x(dist,dir);
+		axis_y = lengthdir_y(dist,dir);
+		x -= obj_player.carry_x;
+		y -= obj_player.carry_y;
+	}
+}
+
