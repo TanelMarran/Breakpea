@@ -21,6 +21,11 @@ if(on_ground) {
 	depth = obj_player.depth;
 	x += (obj_player.x+obj_player.carry_x-x)*0.4;
 	y += (obj_player.y+obj_player.carry_y-y)*0.4;
+	if(mouse_check_button_pressed(mb_left)) {
+		script_execute(use_script);
+		obj_player.carry = noone;
+		instance_destroy()
+	}
 	if(obj_player.carry != id) {
 		on_ground = true;
 		pickup_cooldown = 30;

@@ -11,6 +11,7 @@ carry_magnitude = 2;
 carry_x = lengthdir_x(carry_height,90)
 carry_y = lengthdir_x(carry_height,90)
 
+rest = 0;
 
 key_right = ord("D");
 key_left = ord("A");

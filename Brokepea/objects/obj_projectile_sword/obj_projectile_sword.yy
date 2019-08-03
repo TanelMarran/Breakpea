@@ -1,43 +1,43 @@
 {
-    "id": "15a6bc94-ab2b-40e0-9a91-0b64fbbae9b5",
+    "id": "b311ed1e-f092-4d58-93be-b85ecaf432a4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_player",
+    "name": "obj_projectile_sword",
     "eventList": [
         {
-            "id": "af050bf8-6f4a-4422-8df5-ebcec5b420a1",
+            "id": "15845ee9-a3c2-42d2-99e6-189f66a69b7d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "15a6bc94-ab2b-40e0-9a91-0b64fbbae9b5"
+            "m_owner": "b311ed1e-f092-4d58-93be-b85ecaf432a4"
         },
         {
-            "id": "a2b69548-074f-4e43-9412-0ff433e7a3e3",
+            "id": "13804237-c776-4ed1-938e-a75f547d5058",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "15a6bc94-ab2b-40e0-9a91-0b64fbbae9b5"
+            "m_owner": "b311ed1e-f092-4d58-93be-b85ecaf432a4"
         },
         {
-            "id": "8b73b568-c474-43ce-8243-5a65f2f7b8ea",
+            "id": "1fd556ac-9b5c-4757-90a5-75373404e82c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "15a6bc94-ab2b-40e0-9a91-0b64fbbae9b5"
+            "m_owner": "b311ed1e-f092-4d58-93be-b85ecaf432a4"
         }
     ],
-    "maskSpriteId": "f1e9303c-2e0f-4a3b-8d88-1806f8c9bce2",
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "a8a297ed-71d7-488b-8566-4520271f0285",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -53,6 +53,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "f1e9303c-2e0f-4a3b-8d88-1806f8c9bce2",
+    "spriteId": "f5e15e04-2f3b-47e3-9d24-046c2bd34b96",
     "visible": true
 }
