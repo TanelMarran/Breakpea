@@ -17,6 +17,10 @@ y += axis_y;
 
 with(instance_place(x,y,obj_enemy)) {
 	hp -= other.damage;
+	if (other.frozen == false) {
+		gamefreeze = 5;
+		other.frozen = true;
+	}
 }
 
 if(swipe_progress > 0.95) {

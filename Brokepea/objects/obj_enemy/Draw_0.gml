@@ -13,5 +13,6 @@ if(dist != 0) {
 
 movement_angle = axis_x/movement_speed;
 
+image_speed *= (gamefreeze==0);
 draw_shadow();
 draw_sprite_ext(sprite_index,image_index,x,y+offset,1,1,-movement_angle*10,c_white,1);

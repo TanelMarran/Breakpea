@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1da880e4-add2-4e04-ab8f-ee558e35eded",
+            "Value": {
+                "id": "57529e07-ebce-4323-8f71-49a9730c8d03",
+                "resourcePath": "scripts\\trace\\trace.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "24a76d38-d0b9-4473-b585-3a3f57624b3e",
             "Value": {
                 "id": "236ce5d4-1f2b-4ea0-9261-1a95dd34fe45",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "c34e799a-5dd4-4268-aa50-e5a34170c6da",
+            "Value": {
+                "id": "5e892275-be8c-4887-a1de-d5087b874b13",
+                "resourcePath": "scripts\\create_monster\\create_monster.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c569d41c-cc66-4a76-9b70-c63f02a76279",
             "Value": {
                 "id": "ad7ed941-b8de-4a31-8be5-c14a8a843474",
@@ -463,6 +479,14 @@
             }
         },
         {
+            "Key": "f30badf6-ead0-4d92-ae7e-a223f0d84ba7",
+            "Value": {
+                "id": "e552229e-ee6e-48cb-80d8-6659016728b6",
+                "resourcePath": "scripts\\create_item\\create_item.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "33944c2f-da5d-4bc8-aab4-6ec577a169d7",
@@ -503,7 +527,10 @@
         "ea092a1c-4901-455a-befb-7367d68f5498",
         "882e1996-a75b-4ac7-afed-1eed84700bd8",
         "ade469b9-07ff-4d21-b72a-eba92d9b92e7",
-        "a2f532e7-8b9c-4b5d-b174-650109aae39c"
+        "a2f532e7-8b9c-4b5d-b174-650109aae39c",
+        "c34e799a-5dd4-4268-aa50-e5a34170c6da",
+        "f30badf6-ead0-4d92-ae7e-a223f0d84ba7",
+        "1da880e4-add2-4e04-ab8f-ee558e35eded"
     ],
     "tutorial": ""
 }

@@ -5,7 +5,7 @@ with(obj_player) {
 	var dir = point_direction(x,y,mouse_x,mouse_y);
 	axis_x = lengthdir_x(len,dir);
 	axis_y = lengthdir_y(len,dir);
-	with(instance_create_layer(x+axis_x*2,y+axis_y*2,"Instances",obj_projectile_sword)) {
+	with(instance_create_layer(x+axis_x*2,y+axis_y*2-sprite_height/2,"Instances",obj_projectile_sword)) {
 		aim_angle = dir;
 		axis_x = other.axis_x;
 		axis_y = other.axis_y;

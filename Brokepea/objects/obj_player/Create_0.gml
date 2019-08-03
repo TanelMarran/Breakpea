@@ -10,6 +10,7 @@ carry_height = sprite_height+5;
 carry_magnitude = 2;
 carry_x = lengthdir_x(carry_height,90)
 carry_y = lengthdir_x(carry_height,90)
+carry_speed = 0.8;
 
 rest = 0;
 
