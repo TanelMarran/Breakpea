@@ -5,6 +5,8 @@ if(gamefreeze != 0) {
 	exit;
 }
 
+damage_flash = max(0,damage_flash-1);
+pursuing = false;
 depth = -y;
 
 event_inherited();
@@ -19,6 +21,7 @@ if(dist_to_player < wander_range) {
 
 	if (dist_to_player < aggro_range) {
 		chosen_speed = aggro_speed;
+		pursuing = true;
 	}
 
 	chosen_speed = min(chosen_speed,dist_to_player);
@@ -26,6 +29,7 @@ if(dist_to_player < wander_range) {
 	t_axis_x = lengthdir_x(chosen_speed,movement_dir);
 	t_axis_y = lengthdir_y(chosen_speed,movement_dir);
 } else { //Wander
+	
 	movement_dir = irandom(360);
 	var rand = irandom(100);
 	if(rand = 0) {

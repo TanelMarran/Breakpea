@@ -16,10 +16,14 @@ y += axis_y;
 
 
 with(instance_place(x,y,obj_enemy)) {
-	hp -= other.damage;
-	if (other.frozen == false) {
-		gamefreeze = 5;
-		other.frozen = true;
+	if(ds_list_find_index(other.damaged_ids,id) == -1) {
+		ds_list_add(other.damaged_ids,id);
+		apply_damage();
+		movement_vector_add(2,other.aim_angle);
+		if (other.frozen == false) {
+			gamefreeze = 5;
+			other.frozen = true;
+		}
 	}
 }
 

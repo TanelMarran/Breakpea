@@ -9,9 +9,11 @@ movement_dir = 0;
 wander_range = 75;
 aggro_range = 50;
 sprite_idle = spr_cactus_idle;
-sprite_walk = spr_cactus_idle;
+sprite_pursue = spr_cactus_walk;
+pursuing = false;
+damage_flash = 0;
 
 shadow_height = 8;
-shadow_width = sprite_width;
+shadow_width = sprite_width*0.8;
 
 hp = 100;
