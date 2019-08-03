@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 init_movement();
+movement_speed = 3.1;
 
 shadow_height = 10;
 shadow_width = sprite_width;
@@ -11,6 +12,12 @@ carry_magnitude = 2;
 carry_x = lengthdir_x(carry_height,90)
 carry_y = lengthdir_x(carry_height,90)
 carry_speed = 0.8;
+
+stamina_max = 100;
+stamina_buildup = 0;
+stamina_buildup_speed_max = 1.5;
+enemy_slowdown_max = 0.5;
+enemy_slowdown = 1;
 
 rest = 0;
 

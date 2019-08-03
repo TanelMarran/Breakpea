@@ -47,6 +47,6 @@ apply_movement();
 x += axis_x;
 y += axis_y;
 
-if (hp <= 0) {
+if (hp <= 0 && damage_flash == 0) {
 	instance_destroy();
 }

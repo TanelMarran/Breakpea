@@ -5,6 +5,8 @@ if(gamefreeze != 0) {
 	exit;
 }
 
+get_damaged();
+
 event_inherited();
 
 //Get user inputs
@@ -20,8 +22,8 @@ move_dir = point_direction(0,0,right_press-left_press,down_press-up_press);
 move_spd = point_distance(0,0,right_press-left_press,down_press-up_press)*movement_speed;
 
 
-t_axis_x = dcos(move_dir)*min(move_spd,movement_speed);
-t_axis_y = -dsin(move_dir)*min(move_spd,movement_speed);
+t_axis_x = dcos(move_dir)*min(move_spd,movement_speed*enemy_slowdown);
+t_axis_y = -dsin(move_dir)*min(move_spd,movement_speed*enemy_slowdown);
 if(carry != noone) {
 	t_axis_x *= carry_speed;
 	t_axis_y *= carry_speed;

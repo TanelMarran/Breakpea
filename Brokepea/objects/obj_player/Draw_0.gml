@@ -26,6 +26,8 @@ movement_angle = axis_x/movement_speed;
 carry_x = lengthdir_x(carry_height,90+carry_magnitude*movement_angle)
 carry_y = lengthdir_y(carry_height,90+carry_magnitude*movement_angle)
 
+var shake = stamina_buildup/stamina_max*2;
+
 image_speed *= (gamefreeze==0);
 draw_shadow();
-draw_sprite_ext(sprite_index,image_index,x,y+offset,1,1,movement_angle*10,c_white,1);
+draw_sprite_ext(sprite_index,image_index,x+random_range(-shake,shake),y+offset+random_range(-shake,shake),1,1,movement_angle*10,c_white,1);

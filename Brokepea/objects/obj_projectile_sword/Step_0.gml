@@ -14,18 +14,23 @@ apply_movement();
 x += axis_x;
 y += axis_y;
 
-
-with(instance_place(x,y,obj_enemy)) {
-	if(ds_list_find_index(other.damaged_ids,id) == -1) {
-		ds_list_add(other.damaged_ids,id);
-		apply_damage();
-		movement_vector_add(2,other.aim_angle);
-		if (other.frozen == false) {
-			gamefreeze = 5;
-			other.frozen = true;
+///SIIN TULEB KASUTADA INSTANCE_PLACE_LIST ET TA KÕIGILE DAMAGE TEEKS
+var _list = ds_list_create();
+instance_place_list(x,y,obj_enemy,_list,false)
+for(var i = 0; i < ds_list_size(_list); i++) {
+	with(ds_list_find_value(_list,i)) {
+		if(ds_list_find_index(other.damaged_ids,id) == -1) {
+			ds_list_add(other.damaged_ids,id);
+			apply_damage();
+			movement_vector_add(3,other.aim_angle);
+			if (other.frozen == false) {
+				gamefreeze = 5;
+				other.frozen = true;
+			}
 		}
 	}
 }
+ds_list_clear(_list);
 
 if(swipe_progress > 0.95) {
 	hang_time--;
