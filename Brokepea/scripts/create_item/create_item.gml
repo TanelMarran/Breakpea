@@ -1,7 +1,7 @@
 repeat(10) {
 	var randx = irandom(room_width);
 	var randy = irandom(room_height);
-	var object = obj_sword;
+	var object = noone;
 
 	//Count number of monsters around random pos
 	var _list = ds_list_create();
@@ -12,7 +12,15 @@ repeat(10) {
 	count = count-collision_circle_list(randx,randy,100,obj_pickup,false,true,_list,false);
 	ds_list_destroy(_list);
 
+	if (count > 2 && irandom(20)) {
+		object = obj_sword;
+	}
+
 	if count > 5 {
+		object = obj_potion;
+	}
+
+	if object != noone {
 		instance_create_layer(randx,randy,"Instances",object);
 		break;
 	}

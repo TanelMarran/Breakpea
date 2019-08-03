@@ -1,23 +1,23 @@
 {
-    "id": "fe975170-8097-40ec-8773-d7b0debfd42e",
+    "id": "74e14457-5901-4c10-9f2f-d0654c8b4234",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_potion",
+    "name": "ob_projectile",
     "eventList": [
         {
-            "id": "d9e293e6-c2d8-4389-bef2-702888fb3f86",
+            "id": "44753dbc-8240-41c7-bab3-bf701a402a8a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "fe975170-8097-40ec-8773-d7b0debfd42e"
+            "m_owner": "74e14457-5901-4c10-9f2f-d0654c8b4234"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "24a76d38-d0b9-4473-b585-3a3f57624b3e",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "cc6f5b97-aedc-4dd9-b066-770d04651e92",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

@@ -17,3 +17,11 @@ var y_add = min(abs(y_dist),acc*y_ratio)*sign(y_dist)
 
 axis_x = axis_x+x_add
 axis_y = axis_y+y_add
+
+if(z != 0) {
+	axis_z -= z_gravity;
+} else {
+	axis_z = 0;
+}
+
+z = max(0,z+axis_z);
