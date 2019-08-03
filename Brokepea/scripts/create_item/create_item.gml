@@ -17,7 +17,7 @@ repeat(10) {
 	}
 
 	if (count > 3 && irandom(20)) {
-		object = obj_potion;
+		object = obj_bow;
 	}
 	
 	if count > 4 {

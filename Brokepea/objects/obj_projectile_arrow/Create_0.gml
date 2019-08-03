@@ -1,0 +1,13 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
+init_shadow(sprite_width/4,4);
+fly_time = 60*3;
+acc_amount = 0.1;
+deacc_amount = 0.1;
+frozen = 0;
+froze_time_max = 20;
+forze_time = 0;
+aim_angle = 0;

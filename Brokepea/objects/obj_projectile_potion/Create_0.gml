@@ -3,8 +3,7 @@
 event_inherited();
 acc_amount = 0.01;
 deacc_amount = 0.01;
-blast_radius = 100;
-init_shadow(sprite_width*0.9,6);
-fly_time = 60;
-z_gravity = 0.1;
+blast_radius = 60;
+init_shadow(sprite_width*1.2,6*1.2);
+z_gravity = 0.3;
 z = 0;
