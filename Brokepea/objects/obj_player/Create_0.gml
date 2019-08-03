@@ -7,7 +7,7 @@ shadow_width = sprite_width;
 
 carry = noone;
 carry_height = sprite_height+5;
-carry_magnitude = 30;
+carry_magnitude = 2;
 carry_x = lengthdir_x(carry_height,90)
 carry_y = lengthdir_x(carry_height,90)
 

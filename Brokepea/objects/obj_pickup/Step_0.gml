@@ -19,8 +19,8 @@ if(on_ground) {
 	}
 } else {
 	depth = obj_player.depth;
-	x += (obj_player.x+obj_player.carry_x-x)*0.8;
-	y += (obj_player.y+obj_player.carry_y-y)*0.8;
+	x += (obj_player.x+obj_player.carry_x-x)*0.4;
+	y += (obj_player.y+obj_player.carry_y-y)*0.4;
 	if(obj_player.carry != id) {
 		on_ground = true;
 		pickup_cooldown = 30;
