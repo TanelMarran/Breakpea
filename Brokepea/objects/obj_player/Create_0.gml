@@ -13,9 +13,9 @@ carry_x = lengthdir_x(carry_height,90)
 carry_y = lengthdir_x(carry_height,90)
 carry_speed = 0.8;
 
-stamina_max = 100;
+stamina_max = 50;
 stamina_buildup = 0;
-stamina_buildup_speed_max = 1.5;
+stamina_buildup_speed_max = 2.5;
 enemy_slowdown_max = 0.5;
 enemy_slowdown = 1;
 
