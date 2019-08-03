@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "9f9c0053-8e48-43a8-8b53-f823602e403d",
+            "Value": {
+                "id": "cd7989fb-2bf0-4e30-870b-83c91fba18ca",
+                "resourcePath": "sprites\\spr_cactus_defeat\\spr_cactus_defeat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a2f532e7-8b9c-4b5d-b174-650109aae39c",
             "Value": {
                 "id": "c8f1d01f-e6a6-4ce6-b58a-5526a473aa4d",
@@ -511,6 +519,14 @@
             }
         },
         {
+            "Key": "dda65900-b2be-4715-ace4-0ee203af684d",
+            "Value": {
+                "id": "798eaa7b-da00-48bd-bd59-082d4253e481",
+                "resourcePath": "scripts\\enemy_defeated\\enemy_defeated.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ddc3b617-c465-415e-861b-efc865c0d89a",
             "Value": {
                 "id": "8900475a-da75-4ef9-8b55-5c3e12ba9dec",
@@ -623,7 +639,8 @@
         "1da880e4-add2-4e04-ab8f-ee558e35eded",
         "afb767e1-8a30-4d23-9f93-b20c22163548",
         "4d1c424a-1320-4ae9-991c-4d75561803b5",
-        "fcc5257e-5be2-47df-8dcb-76128be0fe75"
+        "fcc5257e-5be2-47df-8dcb-76128be0fe75",
+        "dda65900-b2be-4715-ace4-0ee203af684d"
     ],
     "tutorial": ""
 }

@@ -18,5 +18,9 @@ draw_shadow();
 if(damage_flash != 0) {
 	shader_set(shd_white);
 }
-draw_sprite_ext(sprite_index,image_index,x,y+offset-z,1,1,-movement_angle*10,c_white,1);
+if(defeated) {
+	sprite_index = sprite_defeat;
+}
+
+draw_sprite_ext(sprite_index,image_index,x,y+offset-z,1,1,-movement_angle*10+defeated*gametime,c_white,1);
 shader_reset();
