@@ -1,1 +1,3 @@
-instance_create_layer(irandom_range(0,room_width),irandom_range(0,room_height),"Instances",obj_cactus);
+var randx = irandom_range(320,960);
+var randy = irandom_range(320,960);
+instance_create_layer(randx,randy,"Instances",obj_cactus);

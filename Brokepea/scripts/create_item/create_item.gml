@@ -1,6 +1,6 @@
 repeat(10) {
-	var randx = irandom(room_width);
-	var randy = irandom(room_height);
+	var randx = irandom_range(320,960);
+	var randy = irandom_range(320,960);
 	var object = noone;
 
 	//Count number of monsters around random pos

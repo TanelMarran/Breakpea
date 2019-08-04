@@ -45,6 +45,6 @@ x += axis_x;
 y += axis_y;
 
 if(!defeated) {
-	x = clamp(x,0,room_width);
-	y = clamp(y,0,room_height);
+	x = clamp(x,320,960);
+	y = clamp(y,320,960);
 }

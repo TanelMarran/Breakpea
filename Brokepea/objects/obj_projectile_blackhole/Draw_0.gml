@@ -9,5 +9,5 @@ for(var i = 0; i < nmb_of_orbs; i++) {
 draw_shadow();
 draw_sprite_ext(sprite_index,image_index,x,y-z+dsin(gametime*2)*4,1,1,dsin(gametime*3)*2,c_white,1);
 
-x = clamp(x,0,room_width);
-y = clamp(y,0,room_height);
+x = clamp(x,320,960);
+y = clamp(y,320,960);
