@@ -16,6 +16,7 @@ if(z = 0 || (instance_place(x,y,obj_enemy) && z <= 22)) {
 				if (other.frozen == false) {
 					gamefreeze = 5;
 					other.frozen = true;
+					apply_camera_shake(3,2,0.2,0.5);
 				}
 				instance_destroy(other);
 			}

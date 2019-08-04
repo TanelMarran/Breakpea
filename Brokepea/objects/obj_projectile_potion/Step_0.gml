@@ -18,6 +18,7 @@ if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 7)) {
 			}
 		}
 	ds_list_clear(_list);
+	apply_camera_shake(6,6,0.5,0.5);
 	instance_destroy();
 }
 

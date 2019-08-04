@@ -3,11 +3,10 @@
 
 // Inherit the parent event
 event_inherited();
-init_shadow(sprite_width/4,4);
+init_shadow(sprite_width*0.8,4);
 fly_time = 60*3;
-acc_amount = 0.1;
-deacc_amount = 0.1;
+acc_amount = 0.2;
+deacc_amount = 0.2;
 frozen = 0;
 froze_time_max = 20;
-forze_time = 0;
 aim_angle = 0;

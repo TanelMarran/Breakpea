@@ -17,6 +17,7 @@ for(var i = 0; i < ds_list_size(_list); i++) {
 			if (other.frozen == 0 && distance_to_object(obj_player) < 320) {
 				gamefreeze = 10;
 				other.frozen = other.froze_time_max;
+				apply_camera_shake(2,2,0.2,0.2);
 			}
 		}
 	}
