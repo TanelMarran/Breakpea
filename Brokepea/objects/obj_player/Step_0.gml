@@ -44,5 +44,7 @@ apply_movement();
 x += axis_x;
 y += axis_y;
 
-x = clamp(x,0,room_width);
-y = clamp(y,0,room_height);
+if(!defeated) {
+	x = clamp(x,0,room_width);
+	y = clamp(y,0,room_height);
+}

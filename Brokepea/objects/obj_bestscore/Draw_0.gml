@@ -19,6 +19,10 @@ var scale = 0.3;
 var actual_width = scale*surface_get_width(score_surface);
 var actual_height = scale*surface_get_height(score_surface);
 var centeronX = 160-actual_width/2;
-var centeronY = 64-actual_height/2;
+var centeronY = 480-actual_height/2;
+if(obj_player.defeat_screen_flow <= 120) {
+	centeronX = target_x-actual_width/2;
+	centeronY = target_y-actual_height/2;
+}
 
 draw_surface_ext(score_surface,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY,scale,scale,0,color_crown,1);

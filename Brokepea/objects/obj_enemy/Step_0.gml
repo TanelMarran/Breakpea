@@ -57,5 +57,7 @@ if(defeated and z <= 9 and axis_z < 0) {
 	instance_destroy();
 }
 
-x = clamp(x,0,room_width);
-y = clamp(y,0,room_height);
+if(!defeated) {
+	x = clamp(x,0,room_width);
+	y = clamp(y,0,room_height);
+}

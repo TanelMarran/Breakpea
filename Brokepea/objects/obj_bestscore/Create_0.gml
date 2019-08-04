@@ -8,8 +8,8 @@ point_rush = 0;
 char_width = 29;
 spacing = 4;
 depth = -10000;
-target_x = x;
-target_y = y;
+target_x = 160;
+target_y = 64;
 target_hopy = -80;
 
 numbers = "0123456789";

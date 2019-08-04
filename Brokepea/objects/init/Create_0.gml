@@ -3,6 +3,7 @@
 macros();
 
 surface_resize(application_surface, 320, 320);
+randomize();
 
 global.points = 0;
 global.highscore = 0;
