@@ -8,8 +8,10 @@ deacc_amount = 0.03;
 lifetime = 60*8;
 pull_power = 0.6;
 pull_radius = 100;
+active_radius = 0;
+radius_speed = 0.05;
 z_gravity = 0;
-
+color_magnet = make_color_rgb(206*1.2,65*1.2,232*1.2);
 
 
 nmb_of_orbs = 3;

@@ -7,9 +7,7 @@ if(gamefreeze != 0) {
 
 game_time++;
 
-
-
-//Create mosnters and items
+//Create monsters and items
 if(gametime % 60*10 == 0) {
 	create_monster();
 }

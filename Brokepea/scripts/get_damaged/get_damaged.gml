@@ -5,7 +5,7 @@ var count = collision_ellipse_list(x-shadow_width/2*increase_size,y-shadow_heigh
 ds_list_clear(_list);
 var _stamina_buildup = 0;
 if (count == 0) {
-	stamina_buildup = max(0,stamina_buildup-(stamina_max-stamina_buildup)*0.02);
+	stamina_buildup = max(0,stamina_buildup-(stamina_max-stamina_buildup)*stamina_recovery_rate);
 } else {
 	repeat(count) {
 		enemy_slowdown = min(enemy_slowdown_max,enemy_slowdown-0.1)
@@ -39,6 +39,8 @@ if(defeated = true && !visible) {
 
 if(defeated = true && z == 0 && visible) {
 	visible = false;
+	axis_x = 0;
+	axis_y = 0;
 	global.highscore = max(global.highscore,global.points);
 	global.points = 0;
 	obj_score.points_displayed = 0;

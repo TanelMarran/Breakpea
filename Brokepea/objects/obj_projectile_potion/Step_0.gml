@@ -9,6 +9,7 @@ depth = -y;
 if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 7)) {
 	var _list = ds_list_create();
 	collision_circle_list(x,y,blast_radius,obj_enemy,false,true,_list,false);
+	potion_splash();
 	for(var i = 0; i < ds_list_size(_list); i++) {
 		with(ds_list_find_value(_list,i)) {
 				if(!defeated) {

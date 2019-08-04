@@ -2,7 +2,6 @@
 // You can write your code in this editor
 surface_set_target(score_surface);
 	draw_clear_alpha(c_white,0);
-	trace(string(round(points_displayed)));
 	for(var i = 1; i <= nmb_of_characters+1+2; i++) {
 		if(i == 1 or i == nmb_of_characters+1+2) {
 			draw_sprite(score_chars,11,i*(char_width+spacing),0);

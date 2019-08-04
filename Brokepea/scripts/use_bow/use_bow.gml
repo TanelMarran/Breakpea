@@ -8,8 +8,10 @@ with(obj_player) {
 		aim_angle = dir;
 		axis_x = _axis_x*2;
 		axis_y = _axis_y*2;
-		t_axis_x = _axis_x*0.7;
-		t_axis_y = _axis_y*0.7;
+		acc_amount = 1.5;
+		deacc_amount = 1.5;
+		t_axis_x = _axis_x*1.5;
+		t_axis_y = _axis_y*1.5;
 		z = 13;
 	}
 }

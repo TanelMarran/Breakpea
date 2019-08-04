@@ -7,6 +7,8 @@ if(gamefreeze != 0) {
 
 carry_cooldown_time = max(0,carry_cooldown_time-1);
 damage_flash = max(0,damage_flash-1);
+stamina_max = max(60,75-floor(global.points/750)*5);
+stamina_recovery_rate = max(0.005,0.02-floor(global.points/750)*0.005);
 
 get_damaged();
 

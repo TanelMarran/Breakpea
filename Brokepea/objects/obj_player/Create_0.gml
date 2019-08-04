@@ -17,6 +17,7 @@ carry_cooldown_time = 0;
 stamina_max = 75;
 stamina_buildup = 0;
 stamina_buildup_speed_max = 2.5;
+stamina_recovery_rate = 0.02;
 enemy_slowdown_max = 0.5;
 enemy_slowdown = 1;
 
