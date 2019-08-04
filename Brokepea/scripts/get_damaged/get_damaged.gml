@@ -33,9 +33,14 @@ if(stamina_buildup >= stamina_max && defeated = false) {
 	apply_camera_shake(5,5,0.5,0.5);
 }
 
-if(defeated = true && z == 0) {
+if(defeated = true && !visible) {
+	defeat_screen_flow = max(0,defeat_screen_flow-1);
+}
+
+if(defeated = true && z == 0 && visible) {
 	visible = false;
+	global.highscore = max(global.highscore,global.points);
 	global.points = 0;
-	room_goto(rm_play);
-	
+	obj_score.points_displayed = 0;
+	defeat_puff();
 }

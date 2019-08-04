@@ -45,3 +45,5 @@ up_released = keyboard_check_released(key_up);
 down_pressed = keyboard_check_pressed(key_down);
 down_press = keyboard_check(key_down);
 down_released = keyboard_check_released(key_down);
+
+defeat_screen_flow = 180;

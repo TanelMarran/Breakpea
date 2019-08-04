@@ -53,6 +53,7 @@ if (hp <= 0 && !defeated) {
 	enemy_defeated();
 }
 if(defeated and z <= 9 and axis_z < 0) {
+	defeat_puff();
 	instance_destroy();
 }
 
