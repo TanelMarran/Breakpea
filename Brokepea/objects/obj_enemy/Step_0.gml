@@ -35,7 +35,6 @@ if(!defeated) {
 		t_axis_x = lengthdir_x(chosen_speed,movement_dir);
 		t_axis_y = lengthdir_y(chosen_speed,movement_dir);
 	} else { //Wander
-	
 		movement_dir = irandom(360);
 		var rand = irandom(100);
 		if(rand = 0) {
@@ -57,7 +56,8 @@ y += axis_y;
 if (hp <= 0 && !defeated) {
 	var sound = choose(snd_monsterdefeat1,snd_monsterdefeat2);
 	audio_sound_pitch(sound,random_range(1.05,1.15));
-	audio_play_sound_at(sound,x,y,0,50,100,0.4,false,2);
+	audio_sound_gain(sound,1.5,10);
+	audio_play_sound_at(sound,x,y,0,50,100,0.4,false,1);
 	enemy_defeated();
 }
 if(defeated and z <= 9 and axis_z < 0) {

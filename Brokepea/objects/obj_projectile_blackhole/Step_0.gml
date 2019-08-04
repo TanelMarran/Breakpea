@@ -5,6 +5,8 @@ if(gamefreeze != 0) {
 	exit;
 }
 
+audio_emitter_position(emitter,x,y,0);
+
 active_radius += (pull_radius-active_radius)*radius_speed;
 
 depth = -y;

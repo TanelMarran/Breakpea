@@ -11,8 +11,9 @@ instance_place_list(x,y,obj_enemy,_list,false);
 for(var i = 0; i < ds_list_size(_list); i++) {
 	with(ds_list_find_value(_list,i)) {
 		if(!defeated) {
-			audio_sound_pitch(snd_swordcut,random_range(0.55,0.65));
-			audio_play_sound_at(snd_swordcut,x,y,z,100,50,0.4,false,2);
+			var sound = choose(snd_arrowpierce1,snd_arrowpierce2);
+			audio_sound_pitch(sound,random_range(0.95,1.05));
+			audio_play_sound_at(sound,x,y,z,100,50,0.4,false,2);
 			other.combo++;
 			add_points(defeatpoints*min(4,1+floor(other.combo/4)));
 			apply_damage(8);

@@ -11,8 +11,9 @@ pull_radius = 100;
 active_radius = 0;
 radius_speed = 0.05;
 z_gravity = 0;
-color_magnet = make_color_rgb(206*1.2,65*1.2,232*1.2);
-
+emitter = audio_emitter_create();
+audio_emitter_position(emitter,x,y,0);
+audio_play_sound_on(emitter,snd_gravity,false,2);
 
 nmb_of_orbs = 3;
 orbs = 0;
