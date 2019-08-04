@@ -2,3 +2,4 @@
 #macro shadow_alpha 0.2
 #macro gametime obj_controller.game_time
 #macro gamefreeze obj_controller.game_freeze
+#macro defeatpoints 10

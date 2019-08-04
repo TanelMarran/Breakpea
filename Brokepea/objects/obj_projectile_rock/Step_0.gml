@@ -11,6 +11,7 @@ if(z = 0 || (instance_place(x,y,obj_enemy) && z <= 22)) {
 	for(var i = 0; i < 1; i++) {
 		with(ds_list_find_value(_list,i)) {
 			if(!defeated) {
+				add_points(defeatpoints*2);
 				apply_damage();
 				movement_vector_add(1,point_direction(0,0,other.axis_x,other.axis_y));
 				if (other.frozen == false) {

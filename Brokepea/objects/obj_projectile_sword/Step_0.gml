@@ -22,6 +22,8 @@ for(var i = 0; i < ds_list_size(_list); i++) {
 	with(ds_list_find_value(_list,i)) {
 		if(!defeated) {
 			if(ds_list_find_index(other.damaged_ids,id) == -1) {
+				other.combo++;
+				add_points(defeatpoints*min(4,1+floor(other.combo/2)));
 				ds_list_add(other.damaged_ids,id);
 				apply_damage();
 				movement_vector_add(3,other.aim_angle);

@@ -10,3 +10,4 @@ init_movement();
 damaged_ids = ds_list_create();
 damage = 100;
 frozen = false;
+combo = 0;

@@ -9,3 +9,11 @@ lifetime = 60*8;
 pull_power = 0.6;
 pull_radius = 100;
 z_gravity = 0;
+
+
+
+nmb_of_orbs = 3;
+orbs = 0;
+for(var i = 0; i < nmb_of_orbs; i++) {
+	orbs[i] = instance_create_layer(x,y,"Instances",obj_projectile_blackorb);
+}

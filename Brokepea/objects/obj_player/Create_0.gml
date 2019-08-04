@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 init_movement();
-movement_speed = 3.1;
+movement_speed = 2.4;
 
 shadow_height = 10;
 shadow_width = sprite_width;

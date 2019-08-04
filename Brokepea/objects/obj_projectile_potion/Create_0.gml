@@ -7,3 +7,4 @@ blast_radius = 60;
 init_shadow(sprite_width*1.2,6*1.2);
 z_gravity = 0.3;
 z = 0;
+combo = 0;

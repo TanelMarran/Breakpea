@@ -19,5 +19,5 @@ stamina_buildup += _stamina_buildup;
 trace(stamina_buildup);
 
 if(stamina_buildup >= stamina_max) {
-	game_restart()
+	room_goto(rm_play);
 }
