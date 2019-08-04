@@ -11,6 +11,9 @@ aggro_range = 50;
 pursuing = false;
 damage_flash = 0;
 
+arrowed = false;
+arrowed_angle = 0;
+
 shadow_height = 8;
 shadow_width = sprite_width*0.8;
 

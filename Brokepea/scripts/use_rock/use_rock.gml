@@ -1,5 +1,5 @@
 with(obj_player) {
-	rest = 2;
+	rest = 3;
 	var len = 8;
 	var dir = point_direction(x,y,mouse_x,mouse_y+13);
 	var _axis_x = lengthdir_x(len,dir);

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "29d29e72-6d3e-4ef5-aad2-0b12629cb102",
+            "Value": {
+                "id": "028eb0e4-6045-4ab2-84ed-025fff9ec65c",
+                "resourcePath": "views\\29d29e72-6d3e-4ef5-aad2-0b12629cb102.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2a5b0504-c698-44f1-b31d-59ca2e232b25",
             "Value": {
                 "id": "d2472901-13ca-44fd-86c0-2e83a4c08a05",
@@ -212,6 +220,14 @@
                 "id": "538fe9ea-5920-4c67-807b-e0e85515f478",
                 "resourcePath": "sprites\\spr_projectile_potion\\spr_projectile_potion.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4104814b-7bd5-499d-b2bb-395da5d366cd",
+            "Value": {
+                "id": "6b2a1f70-014b-4c97-b261-46d806c528d3",
+                "resourcePath": "scripts\\use_eightball\\use_eightball.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -423,11 +439,27 @@
             }
         },
         {
+            "Key": "9673e0e7-dc1d-43e9-834b-eca56861ed96",
+            "Value": {
+                "id": "8b99ce33-51dd-48c6-aa71-83e6cca67ccd",
+                "resourcePath": "sprites\\spr_eightball\\spr_eightball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "969c2108-dabe-4b8d-bcf0-01c091b269d3",
             "Value": {
                 "id": "84ea7837-7c83-4f02-9553-baa988745b6b",
                 "resourcePath": "views\\969c2108-dabe-4b8d-bcf0-01c091b269d3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9959538f-0473-4d86-bbbf-cafd3f0a0760",
+            "Value": {
+                "id": "dbd3f74a-4ba2-4144-9446-3b2f93de4789",
+                "resourcePath": "objects\\obj_eightball\\obj_eightball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -443,6 +475,14 @@
             "Value": {
                 "id": "cd7989fb-2bf0-4e30-870b-83c91fba18ca",
                 "resourcePath": "sprites\\spr_cactus_defeat\\spr_cactus_defeat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a02f7da1-805b-407d-92c6-fa7724bc9ef7",
+            "Value": {
+                "id": "06597719-1165-4b7e-9256-f3934f2d0e23",
+                "resourcePath": "sprites\\spr_arrowstrike\\spr_arrowstrike.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -507,6 +547,14 @@
             "Value": {
                 "id": "62687a30-e4da-4991-a90e-73850af84121",
                 "resourcePath": "objects\\obj_cactus\\obj_cactus.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b1b02442-da67-4f7b-9528-ba7cf16eb2fa",
+            "Value": {
+                "id": "e1b34490-83f7-4d07-a6be-608fcb90436e",
+                "resourcePath": "objects\\obj_projectile_blackhole\\obj_projectile_blackhole.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -679,6 +727,14 @@
             }
         },
         {
+            "Key": "d7f2eff0-ed89-485a-9477-da2c6a43ebdb",
+            "Value": {
+                "id": "1d25156f-94d8-48f2-b089-362c502066ea",
+                "resourcePath": "views\\d7f2eff0-ed89-485a-9477-da2c6a43ebdb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d884c55b-a18e-454a-8cc5-8729b65b0d38",
             "Value": {
                 "id": "bb7f973e-5d4e-4c05-80d9-3cd086bc5e58",
@@ -708,6 +764,22 @@
                 "id": "8900475a-da75-4ef9-8b55-5c3e12ba9dec",
                 "resourcePath": "scripts\\apply_movement\\apply_movement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dec5aad5-115a-4bc8-b714-869bb4f149dc",
+            "Value": {
+                "id": "21952666-b278-4f1a-a873-18ad0a0b38a5",
+                "resourcePath": "views\\dec5aad5-115a-4bc8-b714-869bb4f149dc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e8d2c994-04e3-4b51-9086-033fb0c9c5ca",
+            "Value": {
+                "id": "c00bd334-02c1-41ad-8501-b74c593774b3",
+                "resourcePath": "sprites\\spr_projectile_blackhole\\spr_projectile_blackhole.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -815,6 +887,7 @@
         "0cac8839-364b-4afa-bb18-cf4ca15cf324",
         "38267dc1-e0c6-40c5-8a46-a76228221be9",
         "05ce686c-c166-4a71-aa08-1f05f0201247",
+        "4104814b-7bd5-499d-b2bb-395da5d366cd",
         "a2f532e7-8b9c-4b5d-b174-650109aae39c",
         "51d27e83-7e93-4b37-81af-f655eb0006be",
         "c34e799a-5dd4-4268-aa50-e5a34170c6da",

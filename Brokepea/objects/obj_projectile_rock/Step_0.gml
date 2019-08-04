@@ -22,6 +22,7 @@ if(z = 0 || (instance_place(x,y,obj_enemy) && z <= 22)) {
 			}
 		}
 	}
+	ds_list_destroy(_list);
 }
 
 if(fly_time == 0) {

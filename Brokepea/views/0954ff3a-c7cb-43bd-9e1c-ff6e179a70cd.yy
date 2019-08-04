@@ -7,7 +7,8 @@
         "882e1996-a75b-4ac7-afed-1eed84700bd8",
         "0cac8839-364b-4afa-bb18-cf4ca15cf324",
         "38267dc1-e0c6-40c5-8a46-a76228221be9",
-        "05ce686c-c166-4a71-aa08-1f05f0201247"
+        "05ce686c-c166-4a71-aa08-1f05f0201247",
+        "4104814b-7bd5-499d-b2bb-395da5d366cd"
     ],
     "filterType": "GMScript",
     "folderName": "Use Items",

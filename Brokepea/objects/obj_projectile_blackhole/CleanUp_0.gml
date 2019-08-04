@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth = 640
+ds_list_clear(grabbed_ids);

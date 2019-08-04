@@ -12,17 +12,19 @@ collision_circle_list(x,y,5,obj_enemy,false,true,_list,false);
 for(var i = 0; i < ds_list_size(_list); i++) {
 	with(ds_list_find_value(_list,i)) {
 		if(!defeated) {
-			apply_damage();
+			apply_damage(4);
 			movement_vector_add(3,other.aim_angle);
 			if (other.frozen == 0 && distance_to_object(obj_player) < 320) {
 				gamefreeze = 10;
 				other.frozen = other.froze_time_max;
 				apply_camera_shake(2,2,0.2,0.2);
 			}
+			arrowed = true;
+			arrowed_angle = other.aim_angle+random_range(-1,2);
 		}
 	}
 }
-ds_list_clear(_list);
+ds_list_destroy(_list);
 
 if(fly_time == 0) {
 	instance_destroy();

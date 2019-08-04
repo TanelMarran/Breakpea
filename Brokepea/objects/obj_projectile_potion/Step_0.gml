@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(gamefreeze != 0) {
+	exit;
+}
+
 depth = -y;
 
 if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 7)) {
@@ -17,7 +21,7 @@ if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 7)) {
 				}
 			}
 		}
-	ds_list_clear(_list);
+	ds_list_destroy(_list);
 	apply_camera_shake(6,6,0.5,0.5);
 	instance_destroy();
 }

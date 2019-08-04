@@ -1,3 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth = 640
+
+// Inherit the parent event
+event_inherited();
+use_script = use_eightball;
+

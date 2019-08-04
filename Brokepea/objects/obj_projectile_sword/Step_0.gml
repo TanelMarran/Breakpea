@@ -34,7 +34,7 @@ for(var i = 0; i < ds_list_size(_list); i++) {
 		}
 	}
 }
-ds_list_clear(_list);
+ds_list_destroy(_list);
 
 if(swipe_progress > 0.95) {
 	hang_time--;

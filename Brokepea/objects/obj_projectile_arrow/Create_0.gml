@@ -8,5 +8,5 @@ fly_time = 60*3;
 acc_amount = 0.2;
 deacc_amount = 0.2;
 frozen = 0;
-froze_time_max = 20;
+froze_time_max = 10;
 aim_angle = 0;

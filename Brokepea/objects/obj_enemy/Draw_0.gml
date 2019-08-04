@@ -11,12 +11,15 @@ if(pursuing) {
 	offset = -image_index*1.2;
 }
 
-movement_angle = axis_x/movement_speed;
+movement_angle = max(1,axis_x/movement_speed);
 
 image_speed *= (gamefreeze==0);
 draw_shadow();
 if(damage_flash != 0) {
 	shader_set(shd_white);
+	if(arrowed) {
+		draw_sprite_ext(spr_arrowstrike,arrowed_angle/4,x,y+offset-z-7,random_range(0.95,1.05),random_range(0.95,1.05),arrowed_angle,c_white,1);
+	}
 }
 if(defeated) {
 	sprite_index = sprite_defeat;

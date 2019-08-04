@@ -12,7 +12,7 @@ repeat(10) {
 	count = count-collision_circle_list(randx,randy,125,obj_pickup,false,true,_list,false);
 	ds_list_destroy(_list);
 
-	object = choose(obj_sword,obj_potion,obj_rock,obj_bow);
+	object = choose(obj_sword,obj_potion,obj_rock,obj_bow,obj_eightball);
 
 	if object != noone {
 		instance_create_layer(randx,randy,"Instances",object);
