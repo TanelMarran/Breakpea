@@ -11,6 +11,11 @@ depth = -y;
 
 event_inherited();
 
+if(sprite_index = sprite_pursue && image_tween == 0) {
+	audio_sound_pitch(snd_walk1,random_range(0.65,0.75));
+	audio_play_sound_at(snd_monsterwalk1,x,y,0,50,100,0.4,false,3);
+}
+
 dist_to_player = point_distance(x,y,obj_player.x,obj_player.y);
 
 if(!defeated) {
@@ -50,6 +55,9 @@ x += axis_x;
 y += axis_y;
 
 if (hp <= 0 && !defeated) {
+	var sound = choose(snd_monsterdefeat1,snd_monsterdefeat2);
+	audio_sound_pitch(sound,random_range(1.05,1.15));
+	audio_play_sound_at(sound,x,y,0,50,100,0.4,false,2);
 	enemy_defeated();
 }
 if(defeated and z <= 9 and axis_z < 0) {

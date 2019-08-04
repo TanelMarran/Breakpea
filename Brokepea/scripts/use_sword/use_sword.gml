@@ -9,5 +9,7 @@ with(obj_player) {
 		aim_angle = dir;
 		axis_x = other.axis_x;
 		axis_y = other.axis_y;
+		audio_sound_pitch(snd_sword,random_range(0.85,1.15));
+		audio_play_sound_at(snd_sword,x,y,z,100,50,0.4,false,2);
 	}
 }

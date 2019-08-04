@@ -5,6 +5,13 @@ if(gamefreeze != 0) {
 	exit;
 }
 
+audio_listener_position(x,y,0);
+
+if((sprite_index = spr_player_walk or sprite_index = spr_player_walk_carry) && image_tween == 0) {
+	audio_sound_pitch(snd_walk1,random_range(0.55,0.65));
+	audio_play_sound_at(snd_walk1,x,y,0,50,100,0.4,false,1);
+}
+
 carry_cooldown_time = max(0,carry_cooldown_time-1);
 damage_flash = max(0,damage_flash-1);
 stamina_max = max(60,75-floor(global.points/750)*5);

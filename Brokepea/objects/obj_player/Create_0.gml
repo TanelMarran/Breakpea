@@ -26,6 +26,9 @@ defeated = false;
 
 rest = 0;
 
+image_tween = 0;
+image_index_last = 0;
+
 key_right = ord("D");
 key_left = ord("A");
 key_up = ord("W");

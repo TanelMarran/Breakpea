@@ -21,4 +21,7 @@ sprite_pursue = spr_cactus_walk;
 sprite_defeat = spr_cactus_defeat;
 defeated = false;
 
+image_tween = 0;
+image_index_last = 0;
+
 hp = 100;
