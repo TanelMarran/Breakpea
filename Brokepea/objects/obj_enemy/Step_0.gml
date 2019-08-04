@@ -15,7 +15,7 @@ dist_to_player = point_distance(x,y,obj_player.x,obj_player.y);
 
 if(!defeated) {
 	//Pursue player
-	if(dist_to_player < wander_range) {
+	if(dist_to_player < wander_range && obj_player.defeated == false) {
 		movement_dir = point_direction(x,y,obj_player.x,obj_player.y);
 
 		var chosen_speed = movement_speed;
@@ -55,3 +55,6 @@ if (hp <= 0 && !defeated) {
 if(defeated and z <= 9 and axis_z < 0) {
 	instance_destroy();
 }
+
+x = clamp(x,0,room_width);
+y = clamp(y,0,room_height);

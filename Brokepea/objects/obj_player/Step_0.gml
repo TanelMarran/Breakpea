@@ -6,6 +6,7 @@ if(gamefreeze != 0) {
 }
 
 carry_cooldown_time = max(0,carry_cooldown_time-1);
+damage_flash = max(0,damage_flash-1);
 
 get_damaged();
 
@@ -14,7 +15,9 @@ event_inherited();
 //Get user inputs
 reset_keys();
 if(rest == 0) {
-	get_inputs();
+	if(!defeated) {
+		get_inputs();
+	}
 } else {
 	rest--;
 }
@@ -31,7 +34,15 @@ if(carry != noone) {
 	t_axis_y *= carry_speed;
 }
 
+if(mouse_check_button_pressed(mb_right)) {
+	carry = noone;
+	carry_cooldown_time = carry_cooldown*2;
+}
+
 apply_movement();
 
 x += axis_x;
 y += axis_y;
+
+x = clamp(x,0,room_width);
+y = clamp(y,0,room_height);

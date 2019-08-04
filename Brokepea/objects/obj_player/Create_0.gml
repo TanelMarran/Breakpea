@@ -3,8 +3,7 @@
 init_movement();
 movement_speed = 2.4;
 
-shadow_height = 10;
-shadow_width = sprite_width;
+init_shadow(sprite_width*0.8,8);
 
 carry = noone;
 carry_height = sprite_height+5;
@@ -20,6 +19,9 @@ stamina_buildup = 0;
 stamina_buildup_speed_max = 2.5;
 enemy_slowdown_max = 0.5;
 enemy_slowdown = 1;
+
+damage_flash = 0;
+defeated = false;
 
 rest = 0;
 

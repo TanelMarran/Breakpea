@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "61759f58-54c4-4867-bb38-4332b5dd5b15",
+            "Value": {
+                "id": "4d87b166-d314-4639-801f-8211d37f8ab2",
+                "resourcePath": "sprites\\spr_sweat\\spr_sweat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "649e36a5-2b61-40a1-b4ea-bc0f22c1c423",
             "Value": {
                 "id": "14f5020d-6414-4991-85b8-6ae2bd98cdd0",
@@ -516,6 +524,14 @@
                 "id": "c8f1d01f-e6a6-4ce6-b58a-5526a473aa4d",
                 "resourcePath": "scripts\\reset_keys\\reset_keys.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a39830f9-f2b4-4f77-8e1c-115cc182948f",
+            "Value": {
+                "id": "775a0936-4057-4c63-bb79-f140d296c598",
+                "resourcePath": "sprites\\spr_player_defeat\\spr_player_defeat.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
