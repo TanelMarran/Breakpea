@@ -35,6 +35,11 @@ if(!defeated) {
 		t_axis_x = lengthdir_x(chosen_speed,movement_dir);
 		t_axis_y = lengthdir_y(chosen_speed,movement_dir);
 	} else { //Wander
+		if(irandom(instance_number(obj_enemy)*200) = 1) {
+			var sound = choose(snd_monsterwander1,snd_monsterwander2,snd_monsterwander3,snd_monsterwander4);
+			audio_sound_pitch(sound,random_range(0.75,1.25));
+			audio_play_sound_at(sound,obj_enemy.x,obj_enemy.y,0,150,300,0.4,false,4);
+		}
 		movement_dir = irandom(360);
 		var rand = irandom(100);
 		if(rand = 0) {

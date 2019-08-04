@@ -25,6 +25,7 @@ if(z = 0 || (instance_place(x,y,obj_enemy) && z <= 22)) {
 				instance_destroy(other);
 			}
 		}
+		instance_create_layer(x,y,"Instances",obj_rockfade);
 	}
 	ds_list_destroy(_list);
 }

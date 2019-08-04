@@ -1,4 +1,6 @@
 ///defeat_puff(x,y)
+audio_sound_pitch(snd_poof,random_range(0.75,1.25));
+audio_play_sound_at(snd_poof,x,y,z,100,50,0.4,false,2);
 repeat(3) {
 	var randx = x+random_range(-sprite_get_xoffset(sprite_index),sprite_width);
 	var randy = y+random_range(-sprite_get_yoffset(sprite_index),sprite_height);
