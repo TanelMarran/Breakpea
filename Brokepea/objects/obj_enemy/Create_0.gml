@@ -4,7 +4,7 @@
 init_movement();
 superboost = (global.points>500 && irandom(8)==1)*80;
 movement_speed = 0.4;
-aggro_speed = 1+min(0.2,floor(global.points/750)*0.1);
+aggro_speed = 1+min(0.16,floor(global.points/750)*0.08);
 //aggro_anim_speed = 1.2;
 movement_dir = 0;
 wander_range = 75+irandom_range(-8,5)+superboost;
@@ -24,5 +24,6 @@ defeated = false;
 
 image_tween = 0;
 image_index_last = 0;
+superboost_color = make_color_rgb(214,170,94);
 
 hp = 100;

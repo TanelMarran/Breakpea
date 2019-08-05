@@ -1,4 +1,4 @@
-var amount_of_items = 20
+var amount_of_items = 20+(global.points > 1250)*2;
 if(instance_number(obj_pickup) < amount_of_items) {
 	repeat(round(abs(instance_number(obj_enemy)-amount_of_items)*0.1)) {
 		var randint = irandom(100)+max(10,floor(global.points/200)*1);

@@ -1,4 +1,4 @@
-var how_many_monsters = 70
+var how_many_monsters = 70+(global.points > 1250)*5;
 repeat(ceil(abs(instance_number(obj_enemy)-how_many_monsters)*0.1)) {
 	while(true) {
 		var randx = irandom_range(320,960);
@@ -9,4 +9,3 @@ repeat(ceil(abs(instance_number(obj_enemy)-how_many_monsters)*0.1)) {
 	}
 	instance_create_layer(randx,randy,"Instances",obj_cactus);
 }
-trace(instance_number(obj_enemy),instance_number(obj_pickup));

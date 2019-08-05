@@ -25,5 +25,9 @@ if(defeated) {
 	sprite_index = sprite_defeat;
 }
 
-draw_sprite_ext(sprite_index,image_index,x,y+offset-z,1,1,-movement_angle*10+defeated*gametime,c_white,1);
+var color = c_white;
+if(superboost != 0) {
+	color = superboost_color;
+}
+draw_sprite_ext(sprite_index,image_index,x,y+offset-z,1,1,-movement_angle*10+defeated*gametime,color,1);
 shader_reset();

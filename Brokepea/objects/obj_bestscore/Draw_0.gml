@@ -22,6 +22,12 @@ var centeronY = 480-actual_height/2;
 if(obj_player.defeat_screen_flow <= 120) {
 	centeronX = target_x-actual_width/2;
 	centeronY = target_y-actual_height/2;
+	if(playsound) {
+		var sound = choose(snd_button1,snd_button2,snd_button3,snd_button4);
+		audio_sound_pitch(sound,random_range(0.5,0.55));
+		audio_play_sound_at(sound,x,y,0,150,300,0.4,false,4);
+		playsound = !playsound;
+	}
 }
 
 draw_surface_ext(score_surface,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY,scale,scale,0,color_crown,1);

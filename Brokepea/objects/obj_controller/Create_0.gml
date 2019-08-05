@@ -13,3 +13,5 @@ repeat(50) {
 repeat(25) {
 	create_item()
 }
+
+startcount = instance_count;

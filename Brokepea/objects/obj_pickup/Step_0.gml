@@ -15,6 +15,8 @@ if(on_ground) {
 	depth = -y;
 	if(place_meeting(x,y,obj_player) && obj_player.carry_cooldown_time = 0 && obj_player.defeated == false) {
 		on_ground = false;
+		audio_sound_pitch(snd_pickup,random_range(0.75,1.25));
+		audio_play_sound_at(snd_pickup,x,y,z,100,50,0.4,false,2);
 		obj_player.carry = id;
 		obj_player.carry_cooldown_time = obj_player.carry_cooldown;
 	}

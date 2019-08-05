@@ -10,6 +10,6 @@ spacing = 4;
 depth = -10000;
 target_x = 160;
 target_y = 64;
-target_hopy = -80;
+playsound = true;
 
 numbers = "0123456789";

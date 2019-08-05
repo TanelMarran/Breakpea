@@ -19,6 +19,8 @@ stamina_buildup += _stamina_buildup;
 
 
 if(stamina_buildup >= stamina_max && defeated = false) {
+	audio_sound_pitch(snd_swordcut,random_range(1.2,1.35));
+	audio_play_sound_at(snd_swordcut,x,y,z,100,50,0.4,false,2);
 	defeated = true;
 	axis_z = 5;
 	z_gravity = 0.4;
@@ -42,7 +44,5 @@ if(defeated = true && z == 0 && visible) {
 	axis_x = 0;
 	axis_y = 0;
 	global.highscore = max(global.highscore,global.points);
-	global.points = 0;
-	obj_score.points_displayed = 0;
 	defeat_puff();
 }
