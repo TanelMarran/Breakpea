@@ -11,3 +11,4 @@ damaged_ids = ds_list_create();
 damage = 100;
 frozen = false;
 combo = 0;
+image_angle = aim_angle-swipe_angle/2;
