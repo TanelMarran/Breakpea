@@ -1,19 +1,19 @@
 var amount_of_items = 20+(global.points > 1250)*2;
 if(instance_number(obj_pickup) < amount_of_items) {
 	repeat(round(abs(instance_number(obj_enemy)-amount_of_items)*0.1)) {
-		var randint = irandom(100)+max(10,floor(global.points/200)*1);
+		var randint = irandom(100);
 		var needed = 0;
 		
-		if(randint < 30) {
+		if(randint < 35) {
 			object = obj_rock;
 			needed = 0;
-		} else if (randint < 55) {
+		} else if (randint < 60) {
 			object = obj_sword;
 			needed = 1;
-		} else if (randint < 75) {
+		} else if (randint < 80) {
 			object = obj_bow;
 			needed = 2;
-		} else if (randint < 90) {
+		} else if (randint < 87) {
 			object = obj_eightball;
 			needed = 4;
 		} else {

@@ -1,6 +1,6 @@
 //switch()
 with(obj_player) {
-	rest = 30;
+	rest = 20;
 	var len = 4;
 	var dir = point_direction(x,y,mouse_x,mouse_y);
 	axis_x = lengthdir_x(len,dir);

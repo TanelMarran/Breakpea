@@ -14,6 +14,4 @@ if(gametime % 60*10 == 0) {
 
 if(gametime % 60*10 == 0) {
 	create_item();
-	var c = instance_count-startcount;
-	trace(fps);
 }

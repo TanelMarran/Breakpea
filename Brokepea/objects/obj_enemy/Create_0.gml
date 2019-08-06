@@ -11,6 +11,7 @@ wander_range = 75+irandom_range(-8,5)+superboost;
 aggro_range = 50+irandom_range(-10,10)+floor(global.points/250)*1+superboost;
 pursuing = false;
 damage_flash = 0;
+pulled = false;
 
 arrowed = false;
 arrowed_angle = 0;

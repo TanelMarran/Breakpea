@@ -14,18 +14,20 @@ depth = -y;
 pushout();
 
 
-collision_circle_list(x,y,active_radius,obj_enemy,false,true,grabbed_ids,false);
-for(var i = 0; i < min(ds_list_size(grabbed_ids),15); i++) {
-	with(ds_list_find_value(grabbed_ids,i)) {
-		if(!defeated) {
-				var distance_to_blackhole = point_distance(x,y,other.x,other.y)/other.active_radius//*0.3+0.6
-				if(distance_to_blackhole > 0.3) {
-					movement_vector_add(other.pull_power*distance_to_blackhole*0.3+0.6,point_direction(x,y,other.x,other.y));
+
+if(lifetime > 0 && collision_circle(x,y,active_radius,obj_enemy,false,true)) {
+	collision_circle_list(x,y,active_radius,obj_enemy,false,true,grabbed_ids,false);
+	for(var i = 0; i < min(ds_list_size(grabbed_ids),15); i++) {
+		with(ds_list_find_value(grabbed_ids,i)) {
+			if(!defeated && !pulled) {
+					var distance_to_blackhole = min(1,point_distance(x,y,other.x,other.y)/other.active_radius*0.9);
+					movement_vector_add(other.pull_power*distance_to_blackhole,point_direction(x,y,other.x,other.y));
+					pulled = true;
 				}
 			}
 		}
-	}
-ds_list_clear(grabbed_ids);
+	ds_list_clear(grabbed_ids);
+}
 
 lifetime--;
 if(lifetime == 0) {

@@ -32,7 +32,7 @@ if(stamina_buildup >= stamina_max && defeated = false) {
 	movement_vector_add(random_range(1,2),irandom(360));
 	acc_amount = 0.01;
 	deacc_amount = 0.01;
-	apply_camera_shake(5,5,0.5,0.5);
+	apply_camera_shake(8,8,0.5,0.5);
 }
 
 if(defeated = true && !visible) {
@@ -44,5 +44,6 @@ if(defeated = true && z == 0 && visible) {
 	axis_x = 0;
 	axis_y = 0;
 	global.highscore = max(global.highscore,global.points);
-	defeat_puff();
+	defeat_puff(-8);
+	defeat_puff(-8);
 }

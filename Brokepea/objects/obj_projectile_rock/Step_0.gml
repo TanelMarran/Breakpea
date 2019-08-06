@@ -5,11 +5,10 @@ if(gamefreeze != 0) {
 }
 
 depth = -y;
-if(z = 0 || (instance_place(x,y,obj_enemy) && z <= 22)) {
-	var _list = ds_list_create();
-	instance_place_list(x,y,obj_enemy,_list,false);
+if(instance_place(x,y,obj_enemy)) {
+	instance_place_list(x,y,obj_enemy,damaged_ids,false);
 	for(var i = 0; i < 1; i++) {
-		with(ds_list_find_value(_list,i)) {
+		with(ds_list_find_value(damaged_ids,i)) {
 			if(!defeated) {
 				var sound = snd_rock;
 				audio_sound_pitch(sound,random_range(0.95,1.05));
@@ -27,7 +26,6 @@ if(z = 0 || (instance_place(x,y,obj_enemy) && z <= 22)) {
 		}
 		instance_create_layer(x,y,"Instances",obj_rockfade);
 	}
-	ds_list_destroy(_list);
 }
 
 if(fly_time == 0) {

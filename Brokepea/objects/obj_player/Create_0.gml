@@ -4,6 +4,7 @@ init_movement();
 movement_speed = 2.4;
 
 init_shadow(sprite_width*0.8,8);
+audio_listener_orientation(0,0,1000,0,-1,0);
 
 carry = noone;
 carry_height = sprite_height+5;

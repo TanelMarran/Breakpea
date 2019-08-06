@@ -7,13 +7,12 @@ if(gamefreeze != 0) {
 depth = -y;
 
 if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 7)) {
-	var _list = ds_list_create();
-	collision_circle_list(x,y,blast_radius,obj_enemy,false,true,_list,false);
+	collision_circle_list(x,y,blast_radius,obj_enemy,false,true,damaged_ids,false);
 	potion_splash();
 	audio_sound_pitch(snd_flames,random_range(0.85,1.15));
 	audio_play_sound_at(snd_flames,x,y,z,100,50,0.4,false,2);
-	for(var i = 0; i < ds_list_size(_list); i++) {
-		with(ds_list_find_value(_list,i)) {
+	for(var i = 0; i < ds_list_size(damaged_ids); i++) {
+		with(ds_list_find_value(damaged_ids,i)) {
 				if(!defeated) {
 					other.combo++;
 					add_points(defeatpoints*min(4,1+floor(other.combo/4)));
@@ -26,7 +25,6 @@ if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 7)) {
 				}
 			}
 		}
-	ds_list_destroy(_list);
 	apply_camera_shake(6,6,0.5,0.5);
 	instance_destroy();
 }

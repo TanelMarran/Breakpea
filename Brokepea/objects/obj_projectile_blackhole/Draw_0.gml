@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_speed = 1+min(point_distance(0,0,axis_x,axis_y),2)/2*0.5;
+var orb_angles = 360/nmb_of_orbs;
 for(var i = 0; i < nmb_of_orbs; i++) {
-	orbs[i].x = other.x + lengthdir_x(active_radius,gametime+i*360/nmb_of_orbs);
-	orbs[i].y = other.y + lengthdir_y(active_radius,gametime+i*360/nmb_of_orbs);
+	orbs[i].x = other.x + lengthdir_x(active_radius+dsin(gametime*0.2+i*orb_angles)*3,gametime+i*orb_angles);
+	orbs[i].y = other.y + lengthdir_y(active_radius+dsin(gametime*0.2+i*orb_angles)*3,gametime+i*orb_angles);
 }
 
 draw_shadow();

@@ -4,4 +4,3 @@
 // Inherit the parent event
 event_inherited();
 use_script = use_eightball;
-

@@ -27,6 +27,9 @@ carry_x = lengthdir_x(carry_height,90+carry_magnitude*movement_angle)
 carry_y = lengthdir_y(carry_height,90+carry_magnitude*movement_angle)
 
 var shake = stamina_buildup/(stamina_max-25)*2;
+if(!defeated) {
+	apply_camera_shake(shake*0.5,shake*0.5,0.8,0.8);
+}
 
 if(stamina_buildup != 0) {
 	draw_sprite_ext(spr_sweat,gametime*0.1+((stamina_buildup/stamina_max)*0.5),x+random_range(-shake,shake),y+offset+random_range(-shake,shake)-z,1,1,movement_angle*10,c_white,1);

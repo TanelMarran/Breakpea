@@ -4,6 +4,7 @@ if(gamefreeze != 0) {
 	exit;
 }
 
+pulled = false;
 damage_flash = max(0,damage_flash-1);
 pursuing = false;
 depth = -y;
