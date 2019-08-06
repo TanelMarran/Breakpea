@@ -33,14 +33,14 @@ if(rest == 0) {
 }
 depth = -y;
 
-stone_boost = max(1,stone_boost-0.01);
+stone_boost = max(1,stone_boost-stone_boost_deacc);
 
 move_dir = point_direction(0,0,right_press-left_press,down_press-up_press);
 move_spd = point_distance(0,0,right_press-left_press,down_press-up_press)*movement_speed*stone_boost;
+trace(move_spd);
 
-
-t_axis_x = dcos(move_dir)*min(move_spd,movement_speed*enemy_slowdown);
-t_axis_y = -dsin(move_dir)*min(move_spd,movement_speed*enemy_slowdown);
+t_axis_x = dcos(move_dir)*min(move_spd,movement_speed*enemy_slowdown*stone_boost);
+t_axis_y = -dsin(move_dir)*min(move_spd,movement_speed*enemy_slowdown*stone_boost);
 if(carry != noone) {
 	t_axis_x *= carry_speed;
 	t_axis_y *= carry_speed;

@@ -54,3 +54,4 @@ down_released = keyboard_check_released(key_down);
 defeat_screen_flow = 180;
 
 stone_boost = 1;
+stone_boost_deacc = 0.03;
