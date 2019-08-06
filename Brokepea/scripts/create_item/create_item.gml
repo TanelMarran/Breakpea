@@ -10,14 +10,17 @@ if(instance_number(obj_pickup) < amount_of_items) {
 		} else if (randint < 60) {
 			object = obj_sword;
 			needed = 1;
-		} else if (randint < 80) {
+		} else if (randint < 78) {
 			object = obj_bow;
 			needed = 2;
-		} else if (randint < 87) {
+		} else if (randint < 84) {
+			object = obj_eightball;
+			needed = 4;
+		} else if (randint < 91) {
 			object = obj_eightball;
 			needed = 4;
 		} else {
-			object = obj_potion;
+			object = obj_eightball;
 			needed = 5;
 		}
 

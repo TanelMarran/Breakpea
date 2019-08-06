@@ -34,13 +34,13 @@ if(lifetime == 0) {
 	pull_radius = 0;
 	radius_speed = 0.09;
 } else {
-	/*if (irandom(30)) {
+	if (irandom(90)) {
 		var dir = random(360);
 		with(instance_create_layer(x+lengthdir_x(active_radius*1.1,dir),y+lengthdir_y(active_radius*1.1,dir),"Instances",obj_gravity_pull)) {
 			size = random_range(0.7,1);
 			parent = other;
 		}
-	}*/
+	}
 }
 
 if(lifetime <= 0) {

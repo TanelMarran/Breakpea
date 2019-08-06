@@ -17,11 +17,11 @@ if(dist != 0) {
 	offset = -image_index*1.2;
 }
 
+movement_angle = axis_x/movement_speed;
+
 if(carry != noone) {
 	draw_sprite_ext(carry.sprite_index,carry.image_index,carry.x,carry.y+offset-1,1,1,movement_angle*carry_magnitude*10+dsin(gametime*2.5)*10,c_white,1);
 }
-
-movement_angle = axis_x/movement_speed;
 
 carry_x = lengthdir_x(carry_height,90+carry_magnitude*movement_angle)
 carry_y = lengthdir_y(carry_height,90+carry_magnitude*movement_angle)

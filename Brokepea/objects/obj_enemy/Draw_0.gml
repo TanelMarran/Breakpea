@@ -12,7 +12,7 @@ if(inview) {
 		offset = -image_index*1.2;
 	}
 
-	movement_angle = max(1,axis_x/movement_speed);
+	movement_angle = min(axis_x/movement_speed,1.5);
 
 	image_speed *= (gamefreeze==0);
 	draw_shadow();
