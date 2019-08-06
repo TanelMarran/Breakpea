@@ -13,7 +13,7 @@ if(dist != 0) {
 	if(carry != noone) {
 		sprite_index = spr_player_walk_carry;
 	}
-	image_speed = 1+0.2*min(1,dist/movement_speed);
+	image_speed = 1+0.2*min(1,dist/movement_speed)*stone_boost;
 	offset = -image_index*1.2;
 }
 

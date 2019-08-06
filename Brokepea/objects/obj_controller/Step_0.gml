@@ -7,11 +7,13 @@ if(gamefreeze != 0) {
 
 game_time++;
 
-//Create monsters and items
-if(gametime % 60*10 == 0) {
-	create_monster();
-}
+if(room == rm_play) {
+	//Create monsters and items
+	if(gametime % 60*10 == 0) {
+		create_monster();
+	}
 
-if(gametime % 60*10 == 0) {
-	create_item();
+	if(gametime % 60*10 == 0) {
+		create_item();
+	}
 }
