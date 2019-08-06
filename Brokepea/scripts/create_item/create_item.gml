@@ -21,8 +21,8 @@ if(instance_number(obj_pickup) < amount_of_items) {
 			needed = 5;
 		}
 
-		var randx = irandom_range(320,960);
-		var randy = irandom_range(320,960);
+		var randx = irandom_range(320,320+room_size);
+		var randy = irandom_range(320,320+room_size);
 		var i = 0;
 		while(count < needed or i != 20) {
 			//Count number of monsters around random pos

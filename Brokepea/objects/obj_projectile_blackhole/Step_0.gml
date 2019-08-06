@@ -20,7 +20,7 @@ if(lifetime > 0 && collision_circle(x,y,active_radius,obj_enemy,false,true)) {
 	for(var i = 0; i < min(ds_list_size(grabbed_ids),15); i++) {
 		with(ds_list_find_value(grabbed_ids,i)) {
 			if(!defeated && !pulled) {
-					var distance_to_blackhole = min(1,point_distance(x,y,other.x,other.y)/other.active_radius*0.9);
+					var distance_to_blackhole = clamp(point_distance(x,y,other.x,other.y)/other.active_radius,0.4,1);
 					movement_vector_add(other.pull_power*distance_to_blackhole,point_direction(x,y,other.x,other.y));
 					pulled = true;
 				}

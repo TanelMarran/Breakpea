@@ -29,7 +29,7 @@ if(instance_place(x,y,obj_enemy)) {
 }
 
 if(fly_time == 0) {
-	z_gravity = 0.8;
+	instance_destroy();
 } else {
 	fly_time--;
 }

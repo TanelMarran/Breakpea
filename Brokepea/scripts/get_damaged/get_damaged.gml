@@ -2,17 +2,22 @@ enemy_slowdown = 1;
 var _list = ds_list_create();
 var increase_size = 1.5
 var count = collision_ellipse_list(x-shadow_width/2*increase_size,y-shadow_height/2*increase_size,x+shadow_width/2*increase_size,y+shadow_height/2*increase_size,obj_enemy,false,true,_list,false);
-ds_list_clear(_list);
 var _stamina_buildup = 0;
 if (count == 0) {
 	stamina_buildup = max(0,stamina_buildup-(stamina_max-stamina_buildup)*stamina_recovery_rate);
 } else {
-	repeat(count) {
-		enemy_slowdown = min(enemy_slowdown_max,enemy_slowdown-0.1)
+	for(var i = 0; i < ds_list_size(_list); i++) {
+		with(ds_list_find_value(_list,i)) {
+			if(!defeated) {
+				with(other) {
+					enemy_slowdown = min(enemy_slowdown_max,enemy_slowdown-0.1)
+				}
+			}
+		}
 	}
-	_stamina_buildup += stamina_buildup_speed_max/4;
+	_stamina_buildup += stamina_buildup_speed_max/5;
 }
-
+ds_list_clear(_list);
 
 _stamina_buildup = min(_stamina_buildup,stamina_buildup_speed_max);
 stamina_buildup += _stamina_buildup;

@@ -20,6 +20,8 @@ if(on_ground) {
 		obj_player.carry = id;
 		obj_player.carry_cooldown_time = obj_player.carry_cooldown;
 	}
+	x = clamp(x,320,320+room_size);
+	y = clamp(y,320,320+room_size);
 } else {
 	depth = obj_player.depth;
 	x += (obj_player.x+obj_player.carry_x-x)*0.4;
@@ -40,4 +42,3 @@ if(on_ground) {
 		y -= obj_player.carry_y;
 	}
 }
-

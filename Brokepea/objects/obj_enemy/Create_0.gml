@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 init_movement();
-superboost = (global.points>500 && irandom(8)==1)*80;
+superboost = (global.points>500 && irandom(8-min(4,(global.points-500)/500))==1)*80;
 movement_speed = 0.4;
 aggro_speed = 1+min(0.16,floor(global.points/750)*0.08);
 //aggro_anim_speed = 1.2;
@@ -26,5 +26,7 @@ defeated = false;
 image_tween = 0;
 image_index_last = 0;
 superboost_color = make_color_rgb(214,170,94);
+
+inview = abs(obj_camera.x-x) < 180 && abs(obj_camera.y-y) < 180;
 
 hp = 100;

@@ -16,7 +16,7 @@ y += axis_y;
 
 if(place_meeting(x,y,obj_enemy)) {
 	instance_place_list(x,y,obj_enemy,damaged_ids,false);
-	collision_circle_list(x,y,8,obj_enemy,false,true,damaged_ids,false);
+	collision_circle_list(x+lengthdir_x(aim_angle+180,10),y+lengthdir_y(aim_angle+180,10),8,obj_enemy,false,true,damaged_ids,false);
 	for(var i = 0; i < ds_list_size(damaged_ids); i++) {
 		with(ds_list_find_value(damaged_ids,i)) {
 			if(!defeated) {
