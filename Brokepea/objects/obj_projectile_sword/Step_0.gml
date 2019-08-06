@@ -5,6 +5,7 @@ if(gamefreeze != 0) {
 	exit;
 }
 
+last_angle = image_angle;
 image_angle = aim_angle-swipe_angle/2+swipe_angle*swipe_progress;
 
 swipe_progress += (1-swipe_progress)*swipe_speed;

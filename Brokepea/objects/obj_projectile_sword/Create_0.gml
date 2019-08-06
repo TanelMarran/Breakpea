@@ -12,3 +12,4 @@ damage = 100;
 frozen = false;
 combo = 0;
 image_angle = aim_angle-swipe_angle/2;
+last_angle = image_angle;

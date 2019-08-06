@@ -12,5 +12,6 @@ with(obj_player) {
 		audio_sound_pitch(snd_sword,random_range(0.85,1.15));
 		audio_play_sound_at(snd_sword,x,y,z,100,50,0.4,false,2);
 		image_angle = aim_angle-swipe_angle/2;
+		last_angle = image_angle;
 	}
 }

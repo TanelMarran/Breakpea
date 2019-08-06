@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "56bd3168-5724-4075-9bc2-6c9238a7920e",
+            "Value": {
+                "id": "f385bada-0b78-45b8-806e-0db6ba936e2b",
+                "resourcePath": "views\\56bd3168-5724-4075-9bc2-6c9238a7920e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "598ae214-cee1-4caa-ad7c-21dce8f9f69e",
             "Value": {
                 "id": "63ef704e-beb2-48a4-920c-38f04bf67423",
@@ -556,6 +564,14 @@
                 "id": "c4f1b75b-a741-4fd4-9bdf-7e589b0ac14b",
                 "resourcePath": "scripts\\macros\\macros.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "71b9fec7-e7ed-4262-92b4-56543d6150ca",
+            "Value": {
+                "id": "6fb2be2d-c5d3-494f-adaa-9366b21b096a",
+                "resourcePath": "shaders\\shd_swordswing\\shd_swordswing.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -763,6 +779,14 @@
             "Value": {
                 "id": "06597719-1165-4b7e-9256-f3934f2d0e23",
                 "resourcePath": "sprites\\spr_arrowstrike\\spr_arrowstrike.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a0912add-f163-4ff0-863b-d309d0c375cb",
+            "Value": {
+                "id": "29bb6ba2-8662-4489-a40e-a98c8885ab0f",
+                "resourcePath": "sprites\\seed\\seed.yy",
                 "resourceType": "GMSprite"
             }
         },
