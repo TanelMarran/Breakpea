@@ -20,7 +20,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 			object = obj_potion;
 			needed = 4;
 		} else {
-			object = obj_eightball;
+			object = obj_seed;
 			needed = 5;
 		}
 
@@ -44,6 +44,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 		}
 		ds_list_destroy(_list);
 
+		object = obj_seed;
 		instance_create_layer(randx,randy,"Instances",object);
 		break;
 	}

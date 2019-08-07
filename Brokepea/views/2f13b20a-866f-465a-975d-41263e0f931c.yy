@@ -12,7 +12,7 @@
         "56bd3168-5724-4075-9bc2-6c9238a7920e"
     ],
     "filterType": "GMSprite",
-    "folderName": "weapons",
+    "folderName": "Pickups",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(gamefreeze != 0) {
+	exit;
+}
+
 depth = -y;
 image_index = irandom(2);
 
