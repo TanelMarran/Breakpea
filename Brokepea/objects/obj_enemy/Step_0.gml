@@ -55,6 +55,16 @@ if(!defeated) {
 	}
 }
 
+if(flowerslow != false) {
+	var dir = point_direction(x,y,flowerslow.x,flowerslow.y);
+	//var dist = point_distance(x,y,flowerslow.x,flowerslow.y);
+	t_axis_x *= 0.1;
+	t_axis_y *= 0.1;
+	t_axis_x += lengthdir_x(movement_speed*0.1,dir);
+	t_axis_y += lengthdir_y(movement_speed*0.1,dir);
+	flowerslow = false;
+}
+
 apply_movement();
 
 x += axis_x;

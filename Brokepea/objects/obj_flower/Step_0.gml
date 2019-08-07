@@ -4,7 +4,7 @@ if(gamefreeze != 0) {
 	exit;
 }
 
-lifetime--;
+lifetime++;
 depth = -y;
 
 if(obj_player.carry != noone && obj_player.carry.object_index == obj_seed) {
@@ -13,11 +13,8 @@ if(obj_player.carry != noone && obj_player.carry.object_index == obj_seed) {
 	range_alpha = range_alpha*0.5;
 }
 
-if(sprouted && lifetime > 0) {
-	lifetime = 0;
-}
-
-if(lifetime == 0) {
+if(sprouted == true) {
 	sprite_index = spr_flower_submerge;
 	image_index = 0;
+	sprouted = 2;
 }

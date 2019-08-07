@@ -21,7 +21,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 			needed = 4;
 		} else {
 			object = obj_seed;
-			needed = 5;
+			needed = 3;
 		}
 
 		var randx = 0; 
@@ -43,8 +43,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 			}
 		}
 		ds_list_destroy(_list);
-
-		object = obj_seed;
+		
 		instance_create_layer(randx,randy,"Instances",object);
 		break;
 	}

@@ -7,9 +7,9 @@ flower_ids = ds_list_create();
 	for(var i = 0; i < ds_list_size(flower_ids); i++) {
 		var fid = ds_list_find_value(flower_ids,i);
 		with(fid) {
-			create_vines(other.x,other.y);
+			create_flowerwall_creator(other.x,other.y);
 		}
-		create_vines(fid.x,fid.y);
+		create_flowerwall_creator(fid.x,fid.y);
 	}
 	ds_list_destroy(flower_ids);
 	
