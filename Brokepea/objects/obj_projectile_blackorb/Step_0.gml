@@ -3,7 +3,6 @@
 depth = -y;
 image_index = irandom(2);
 
-
 //Queue trail
 if(ds_list_size(trail) > trail_length) {
 	ds_list_delete(trail,0);

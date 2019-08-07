@@ -7,7 +7,8 @@ fly_time--;
 frozen = max(0,frozen-1);
 
 if(place_meeting(x,y,obj_enemy)) {
-	collision_circle_list(x,y,7,obj_enemy,false,true,damaged_ids,false);
+	//collision_circle_list(x,y,7,obj_enemy,false,true,damaged_ids,false);
+	instance_place_list(x,y,obj_enemy,damaged_ids,false);
 	for(var i = 0; i < ds_list_size(damaged_ids); i++) {
 		with(ds_list_find_value(damaged_ids,i)) {
 			if(!defeated) {

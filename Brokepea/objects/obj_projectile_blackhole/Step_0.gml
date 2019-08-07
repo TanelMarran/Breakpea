@@ -7,13 +7,20 @@ if(gamefreeze != 0) {
 
 audio_emitter_position(emitter,x,y,0);
 
-active_radius += (pull_radius-active_radius)*radius_speed;
+var rot_modif = 1+(1-(active_radius/100))*rot_increase_amount;
+rot_angle += rot_speed*rot_modif;
 
 depth = -y;
 
 pushout();
 
-
+if(lifetime <= 0) {
+	pull_radius = 0;
+	active_radius -= max((100-active_radius)*radius_speed,0.5);
+} else {
+	active_radius += (pull_radius-active_radius)*radius_speed;
+	part_emitter_region(global.partsys , partemit, x - active_radius, x + active_radius, y - active_radius, y + active_radius, ps_shape_ellipse, ps_distr_invgaussian);
+}
 
 if(lifetime > 0 && collision_circle(x,y,active_radius,obj_enemy,false,true)) {
 	collision_circle_list(x,y,active_radius,obj_enemy,false,true,grabbed_ids,false);
@@ -30,18 +37,6 @@ if(lifetime > 0 && collision_circle(x,y,active_radius,obj_enemy,false,true)) {
 }
 
 lifetime--;
-if(lifetime == 0) {
-	pull_radius = 0;
-	radius_speed = 0.09;
-} else {
-	if (irandom(90)) {
-		var dir = random(360);
-		with(instance_create_layer(x+lengthdir_x(active_radius*1.1,dir),y+lengthdir_y(active_radius*1.1,dir),"Instances",obj_gravity_pull)) {
-			size = random_range(0.7,1);
-			parent = other;
-		}
-	}
-}
 
 if(lifetime <= 0) {
 	image_xscale *= 0.92;
