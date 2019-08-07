@@ -3,3 +3,4 @@
 trail_length = 20;
 trail = ds_list_create();
 color_gravity = make_color_rgb(206,65,232);
+death = false;

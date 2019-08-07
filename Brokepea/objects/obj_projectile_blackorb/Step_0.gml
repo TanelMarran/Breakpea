@@ -4,7 +4,13 @@ depth = -y;
 image_index = irandom(2);
 
 //Queue trail
-if(ds_list_size(trail) > trail_length) {
+if(ds_list_size(trail) > trail_length or death) {
 	ds_list_delete(trail,0);
 }
-ds_list_add(trail,array(x+random_range(-1,1),y+random_range(-1,1)));
+if(!death) {
+	ds_list_add(trail,array(x+random_range(-1,1),y+random_range(-1,1)));
+} else {
+	if (ds_list_size(trail) == 0) {
+		instance_destroy();
+	}
+}

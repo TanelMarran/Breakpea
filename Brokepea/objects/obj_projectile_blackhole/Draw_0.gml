@@ -3,8 +3,8 @@
 image_speed = 1+min(point_distance(0,0,axis_x,axis_y),2)/2*0.5;
 var orb_angles = 360/nmb_of_orbs;
 for(var i = 0; i < nmb_of_orbs; i++) {
-	orbs[i].x = other.x + lengthdir_x(active_radius+dsin(rot_angle*0.2+i*orb_angles)*8,rot_angle+i*orb_angles);
-	orbs[i].y = other.y + lengthdir_y(active_radius+dsin(rot_angle*0.2+i*orb_angles)*8,rot_angle+i*orb_angles);
+	orbs[i].x = other.x + lengthdir_x(active_radius*(dsin(rot_angle*3)*0.1+1),rot_angle+i*orb_angles);
+	orbs[i].y = other.y - other.z + lengthdir_y(active_radius*(dsin(rot_angle*3)*0.1+1),rot_angle+i*orb_angles);
 }
 
 draw_shadow();

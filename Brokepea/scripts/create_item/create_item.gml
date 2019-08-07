@@ -17,7 +17,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 			object = obj_eightball;
 			needed = 4;
 		} else if (randint < 91) {
-			object = obj_eightball;
+			object = obj_potion;
 			needed = 4;
 		} else {
 			object = obj_eightball;
