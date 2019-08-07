@@ -13,11 +13,7 @@ if(obj_player.carry != noone && obj_player.carry.object_index == obj_seed) {
 	range_alpha = range_alpha*0.5;
 }
 
-if(sprouted && lifetime > 0) {
-	lifetime = 0;
-}
-
 if(lifetime == 0) {
-	sprite_index = spr_flower_submerge;
+	sprite_index = spr_submerge;
 	image_index = 0;
 }

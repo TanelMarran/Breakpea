@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "08566c55-f8bd-461d-8e79-06c58efeda4a",
+            "Value": {
+                "id": "2544c7ae-6ae8-4b11-b5c5-b1824ecdb068",
+                "resourcePath": "objects\\obj_flower_wall\\obj_flower_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0954ff3a-c7cb-43bd-9e1c-ff6e179a70cd",
             "Value": {
                 "id": "5a5100be-f3c6-48da-a50c-2a809810c859",
@@ -756,6 +764,22 @@
                 "id": "3f67b917-7e4c-4326-b9c4-91ec867adf7a",
                 "resourcePath": "sprites\\spr_rock\\spr_rock.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "92b6d3ec-76e5-4893-91fe-41ab282377bd",
+            "Value": {
+                "id": "cb99c6e9-8543-4c92-a770-3494baefdaf2",
+                "resourcePath": "objects\\obj_flower_wall_creator\\obj_flower_wall_creator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "946d9e1e-50e8-422b-898f-03912101aa96",
+            "Value": {
+                "id": "14bc74b2-5258-449a-9900-a3b1dbe0a128",
+                "resourcePath": "scripts\\create_vines\\create_vines.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1590,7 +1614,8 @@
         "31cffe61-0a64-4f71-a6a7-d026a32e5b3f",
         "fe8b1d45-79a8-40b4-a4f2-38454c8bdc54",
         "978ebffd-4fac-43fe-829c-83f8037fa951",
-        "9e84eb69-0f52-4f59-8873-2e41ea8a64ad"
+        "9e84eb69-0f52-4f59-8873-2e41ea8a64ad",
+        "946d9e1e-50e8-422b-898f-03912101aa96"
     ],
     "tutorial": ""
 }

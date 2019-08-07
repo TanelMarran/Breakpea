@@ -6,7 +6,7 @@ if(gamefreeze != 0) {
 
 if(z == 0 && !draw_other) {
 	draw_other = instance_create_layer(x,y,"Instances",obj_flower);
-	depth = 10000;
+	depth = 100;
 }
 if(!draw_other) {
 	depth = -y;

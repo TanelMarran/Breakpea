@@ -4,5 +4,7 @@ lifetime = 60*10;
 init_shadow(8,6);
 vine_radius = 100;
 range_alpha = 0;
-sprouted = false;
+spr_sprout = spr_flower_sprout;
+spr_idle = spr_flower_idle;
+spr_submerge = spr_flower_submerge;
 z = 0;
