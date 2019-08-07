@@ -15,9 +15,9 @@ apply_movement();
 x += axis_x;
 y += axis_y;
 
-if(place_meeting(x,y,obj_enemy)) {
+if(place_meeting(x,y,obj_enemy) or place_meeting(obj_player.x,obj_player.y,obj_enemy)) {
 	instance_place_list(x,y,obj_enemy,damaged_ids,false);
-	collision_circle_list(x+lengthdir_x(aim_angle+180,10),y+lengthdir_y(aim_angle+180,10),8,obj_enemy,false,true,damaged_ids,false);
+	collision_circle_list((obj_player.x+x)/2,(obj_player.y+y)/2,4,obj_enemy,false,true,damaged_ids,false);
 	for(var i = 0; i < ds_list_size(damaged_ids); i++) {
 		with(ds_list_find_value(damaged_ids,i)) {
 			if(!defeated) {
