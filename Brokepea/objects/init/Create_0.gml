@@ -7,5 +7,6 @@ randomize();
 
 global.points = 0;
 global.highscore = 0;
+read_score();
 
 room_goto_next();

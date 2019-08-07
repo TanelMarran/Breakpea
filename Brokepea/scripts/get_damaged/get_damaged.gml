@@ -49,6 +49,7 @@ if(defeated = true && z == 0 && visible) {
 	axis_x = 0;
 	axis_y = 0;
 	global.highscore = max(global.highscore,global.points);
+	write_score();
 	defeat_puff(-8);
 	defeat_puff(-8);
 }
