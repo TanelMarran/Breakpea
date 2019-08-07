@@ -18,4 +18,4 @@ var actual_height = scale*surface_get_height(score_surface);
 var centeronX = 160-actual_width/2;
 var centeronY = 32-actual_height/2;
 
-draw_surface_ext(score_surface,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY,scale,scale,0,c_white,1);
+draw_surface_ext(score_surface,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY+dsin(gametime*1.5)*4,scale,scale,dsin(gametime*1.5)*2,c_white,1);

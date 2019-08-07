@@ -30,5 +30,5 @@ if(obj_player.defeat_screen_flow <= 120) {
 		}
 
 
-	draw_surface_ext(score_surface,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY,scale,scale,0,color_crown,1);
+	draw_surface_ext(score_surface,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY-dsin(gametime*1.5+90)*4,scale,scale,dsin(gametime*1.5+90)*2,color_crown,1);
 }

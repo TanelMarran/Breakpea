@@ -14,4 +14,4 @@ if(obj_player.defeat_screen_flow <= 60) {
 	x = camera_get_view_x(view_camera[0])+target_x;
 	y = camera_get_view_y(view_camera[0])+target_y;
 }
-draw_sprite_ext(sprite_index,0,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY,image_xscale,image_yscale,hovering*dsin(gametime*2)*15,c_white,1);
+draw_sprite_ext(sprite_index,0,camera_get_view_x(view_camera[0])+centeronX,camera_get_view_y(view_camera[0])+centeronY+hovering*dsin(gametime*1.5)*5,image_xscale,image_yscale,hovering*dsin(gametime*2)*4,c_white,1);
