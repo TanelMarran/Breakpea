@@ -6,3 +6,4 @@
 #macro color_crown make_color_rgb(229,202,82)
 #macro room_size 640
 #macro color_flower make_color_rgb(60,108,214)
+#macro color_potion make_color_rgb(219,58,126)
