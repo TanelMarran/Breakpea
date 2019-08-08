@@ -26,7 +26,7 @@ if(inview) {
 	if(damage_flash != 0) {
 		shader_set(shd_white);
 		if(arrowed) {
-			draw_sprite_ext(spr_arrowstrike,arrowed_angle/4,x,y+offset-z-7,random_range(0.95,1.05),random_range(0.95,1.05),arrowed_angle,c_white,1);
+			draw_sprite_ext(spr_arrowstrike,arrowed_angle/4,x,y+offset-z-4,random_range(0.95,1.05),random_range(0.95,1.05),arrowed_angle,c_white,1);
 		}
 	}
 	if(defeated) {
@@ -37,6 +37,6 @@ if(inview) {
 	if(superboost != 0) {
 		color = superboost_color;
 	}
-	draw_sprite_ext(sprite_index,image_index,x,y+offset-z,1,1,-movement_angle*10+defeated*gametime,color,1);
+	draw_sprite_ext(sprite_index,image_index,x,y+offset-z,1,1,-movement_angle*10+defeated*(gametime+rand_angle),color,1);
 	shader_reset();
 }

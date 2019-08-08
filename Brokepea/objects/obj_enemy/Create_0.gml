@@ -13,6 +13,7 @@ pursuing = false;
 damage_flash = 0;
 pulled = false;
 flowerslow = false;
+rand_angle = irandom(360);
 
 arrowed = false;
 arrowed_angle = 0;
