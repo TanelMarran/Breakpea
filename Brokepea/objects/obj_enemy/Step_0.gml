@@ -55,11 +55,13 @@ if(!defeated) {
 	}
 }
 
+bluedrown_percent *= 0.9;
 if(flowerslow != false) {
 	t_axis_x *= 0.3;
 	t_axis_y *= 0.3;
 	x += (flowerslow[0]-x)*0.05;
 	y += (flowerslow[1]-y)*0.05;
+	bluedrown_percent += (1-bluedrown_percent)*0.1;
 }
 
 if(!place_meeting(x,y,obj_flower_wall)) {

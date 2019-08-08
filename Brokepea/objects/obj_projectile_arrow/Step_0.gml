@@ -16,7 +16,7 @@ frozen = max(0,frozen-1);
 				audio_sound_pitch(sound,random_range(0.75+other.combo*0.05,0.80+other.combo*0.05));
 				audio_play_sound_at(sound,x,y,z,100,50,0.4,false,2);
 				other.combo++;
-				add_points(defeatpoints*min(5,1+floor(other.combo/2)));
+				add_points(defeatpoints*min(5,1+floor(other.combo/3)));
 				apply_damage(8);
 				movement_vector_add(3,other.aim_angle);
 				if (other.frozen == 0 && distance_to_object(obj_player) < 320) {
@@ -45,4 +45,4 @@ y += axis_y;
 if(ds_list_size(trail) > trail_length) {
 	ds_list_delete(trail,0);
 }
-ds_list_add(trail,array(x+random_range(-1,1),y+random_range(-1,1)));
+ds_list_add(trail,array(x,y-z));

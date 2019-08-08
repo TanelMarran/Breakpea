@@ -11,6 +11,7 @@ frozen = 0;
 froze_time_max = 10;
 aim_angle = 0;
 combo = 0;
+z_gravity = 0;
 
 trail_length = 20;
 trail = ds_list_create();

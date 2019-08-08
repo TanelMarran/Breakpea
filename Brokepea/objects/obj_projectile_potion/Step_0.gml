@@ -15,7 +15,7 @@ if(z = 0 || (place_meeting(x,y,obj_enemy) && z <= 7)) {
 		with(ds_list_find_value(damaged_ids,i)) {
 				if(!defeated) {
 					other.combo++;
-					add_points(defeatpoints*min(4,1+floor(other.combo/5)));
+					add_points(defeatpoints*min(4,1+floor(other.combo/2)));
 					apply_damage();
 					movement_vector_add(3,point_direction(other.x,other.y,x,y));
 					if (other.frozen == false) {

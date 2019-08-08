@@ -19,6 +19,10 @@ if(inview) {
 
 	image_speed *= (gamefreeze==0);
 	draw_shadow();
+	if(bluedrown_percent != 0) {
+		shader_set(shd_bluedrown);
+		shader_set_uniform_f(uniform_Percent,bluedrown_percent);
+	}
 	if(damage_flash != 0) {
 		shader_set(shd_white);
 		if(arrowed) {

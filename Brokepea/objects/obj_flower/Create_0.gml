@@ -7,6 +7,7 @@ range_alpha = 0;
 sprouted = false;
 image_xscale = choose(-1,1);
 z = 0;
+init_flower_emitter();
 
 var sound = choose(snd_flowergrow1,snd_flowergrow2);
 audio_sound_pitch(sound,random_range(0.55,1.65));

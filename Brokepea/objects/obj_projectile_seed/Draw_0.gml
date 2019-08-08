@@ -12,8 +12,8 @@ if(draw_other != false) {
 					_x[j] = x+lengthdir_x(vine_radius,360/nmb_of_points*(i+j)+lifetime);
 					_y[j] = y+lengthdir_y(vine_radius,360/nmb_of_points*(i+j)+lifetime);
 				}
-				draw_set_alpha(range_alpha*(i % 2)); 
-				draw_line_width(_x[0],_y[0],_x[1],_y[1],2);
+				draw_set_alpha((i % 2)); 
+				draw_line_width(_x[0],_y[0],_x[1],_y[1],range_alpha*2);
 			}
 			draw_set_color(c_white);
 			draw_set_alpha(1);

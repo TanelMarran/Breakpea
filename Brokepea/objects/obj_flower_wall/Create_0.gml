@@ -14,6 +14,7 @@ image_yscale *= 1.2+random_range(-0.5,0.5);
 image_xscale *= 1.2+random_range(-0.5,0.5);
 grabbing = false;
 z = 0;
+init_flower_emitter();
 
 var collide = collision_circle(x,y,2,obj_flower_wall,false,true);
 if(collide) {

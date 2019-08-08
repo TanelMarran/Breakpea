@@ -31,3 +31,7 @@ superboost_color = make_color_rgb(214,170,94);
 inview = abs(obj_camera.x-x) < 180 && abs(obj_camera.y-y) < 180;
 
 hp = 100;
+
+
+bluedrown_percent = 0;
+uniform_Percent = shader_get_uniform(shd_bluedrown,"Percent");

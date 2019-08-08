@@ -5,7 +5,7 @@ for(var i = 0; i < ds_list_size(trail)-1; i++) {
 	var next = ds_list_find_value(trail,i+1);
 	draw_set_color(c_white);
 	draw_set_alpha(0.7);
-	draw_line_width(current[0]-z,current[1]-z,next[0]-z,next[1]-z,round(i/ds_list_size(trail)*8))
+	draw_line_width(current[0],current[1],next[0],next[1],round(i/ds_list_size(trail)*8))
 	draw_set_alpha(1);
 }
 draw_shadow();

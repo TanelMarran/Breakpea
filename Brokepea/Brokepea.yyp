@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "29312de8-26d8-463a-a366-cb64eda15265",
+            "Value": {
+                "id": "17525daa-d2bb-46ef-a397-f5549abd4dce",
+                "resourcePath": "shaders\\shader4\\shader4.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "29d29e72-6d3e-4ef5-aad2-0b12629cb102",
             "Value": {
                 "id": "028eb0e4-6045-4ab2-84ed-025fff9ec65c",
@@ -727,6 +735,14 @@
             }
         },
         {
+            "Key": "7b5960ef-06ed-4d42-ab76-581f26a124d8",
+            "Value": {
+                "id": "960765a0-e5d2-4d7f-b5cb-39e418e4dc5c",
+                "resourcePath": "sprites\\spr_pollen\\spr_pollen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "81c5d8ed-d0c7-4e64-a7a4-2de701145388",
             "Value": {
                 "id": "b2876e14-877d-42bf-936a-7020650c1894",
@@ -748,6 +764,14 @@
                 "id": "cc70e5f2-1d40-4f3c-bbbd-aa166630989d",
                 "resourcePath": "sounds\\snd_rock\\snd_rock.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "851b8b17-39ce-4031-be03-a3ca863b4e96",
+            "Value": {
+                "id": "03e32eed-747a-411b-9a8e-e5a2b2705500",
+                "resourcePath": "shaders\\shd_bluedrown\\shd_bluedrown.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1116,6 +1140,14 @@
                 "id": "459b9854-e976-44a2-93b7-44f70ec27825",
                 "resourcePath": "sounds\\snd_monsterwander2\\snd_monsterwander2.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b8505a29-9f81-4c53-be5e-835af826228a",
+            "Value": {
+                "id": "06341000-c5a7-44ca-ab65-11eea34a2477",
+                "resourcePath": "scripts\\init_flower_emitter\\init_flower_emitter.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1680,7 +1712,8 @@
         "978ebffd-4fac-43fe-829c-83f8037fa951",
         "9e84eb69-0f52-4f59-8873-2e41ea8a64ad",
         "946d9e1e-50e8-422b-898f-03912101aa96",
-        "affd1d71-8e05-4d7b-ad1d-1452868e75d2"
+        "affd1d71-8e05-4d7b-ad1d-1452868e75d2",
+        "b8505a29-9f81-4c53-be5e-835af826228a"
     ],
     "tutorial": ""
 }
