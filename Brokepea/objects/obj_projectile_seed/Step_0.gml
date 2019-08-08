@@ -17,3 +17,6 @@ image_angle = image_angle+image_angle*0.12;
 apply_movement();
 x += axis_x;
 y += axis_y;
+
+x = clamp(x,320,320+room_size);
+y = clamp(y,320,320+room_size);

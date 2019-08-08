@@ -1,4 +1,4 @@
-var how_many_monsters = 70+(global.points > 750)*5;
+var how_many_monsters = 40+min(35,floor(global.points/50)*5); //70+(global.points > 750)*5; 
 repeat(ceil(abs(instance_number(obj_enemy)-how_many_monsters)*0.1)) {
 	while(true) {
 		var randx = irandom_range(320,320+room_size);

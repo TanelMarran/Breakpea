@@ -56,12 +56,13 @@ if(!defeated) {
 }
 
 if(flowerslow != false) {
-	var dir = point_direction(x,y,flowerslow.x,flowerslow.y);
-	//var dist = point_distance(x,y,flowerslow.x,flowerslow.y);
-	t_axis_x *= 0.1;
-	t_axis_y *= 0.1;
-	t_axis_x += lengthdir_x(movement_speed*0.1,dir);
-	t_axis_y += lengthdir_y(movement_speed*0.1,dir);
+	t_axis_x *= 0.3;
+	t_axis_y *= 0.3;
+	x += (flowerslow[0]-x)*0.05;
+	y += (flowerslow[1]-y)*0.05;
+}
+
+if(!place_meeting(x,y,obj_flower_wall)) {
 	flowerslow = false;
 }
 

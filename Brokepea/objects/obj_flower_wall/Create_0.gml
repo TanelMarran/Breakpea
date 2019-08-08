@@ -9,3 +9,13 @@ spr_idle = spr_flower_idle;
 spr_submerge = spr_flower_submerge;
 grabbed_ids = ds_list_create();
 z = 0;
+
+var collide = collision_circle(x,y,2,obj_flower_wall,false,true);
+if(collide) {
+	instance_destroy(collide);
+}
+
+var sound = choose(snd_flowergrow1,snd_flowergrow2);
+audio_sound_pitch(sound,random_range(0.55,1.65));
+audio_play_sound_at(sound,x,y,z,80,10,0.6,false,2);
+sound_white = 0;

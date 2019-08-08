@@ -43,7 +43,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 			}
 		}
 		ds_list_destroy(_list);
-		
+
 		instance_create_layer(randx,randy,"Instances",object);
 		break;
 	}

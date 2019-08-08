@@ -14,6 +14,9 @@ if(obj_player.carry != noone && obj_player.carry.object_index == obj_seed) {
 }
 
 if(sprouted == true) {
+	var sound = snd_flowersubmerge;
+	audio_sound_pitch(sound,random_range(0.55,1.65));
+	audio_play_sound_at(sound,x,y,z,80,10,0.6,false,2);
 	sprite_index = spr_flower_submerge;
 	image_index = 0;
 	sprouted = 2;

@@ -13,17 +13,40 @@ if(obj_player.carry != noone && obj_player.carry.object_index == obj_seed) {
 	range_alpha = range_alpha*0.5;
 }
 
+image_angle = image_angle*0.9;
+image_yscale += (1-image_yscale)*0.1;
+
+if(place_meeting(x,y,obj_pushout)) {
+	var oid = instance_place(x,y,obj_pushout);
+	image_angle = -oid.axis_x*15
+	image_yscale = 1-oid.axis_y*0.1;
+}
+
 instance_place_list(x,y,obj_enemy,grabbed_ids,false);
 for(var i = 0; i < min(ds_list_size(grabbed_ids),15); i++) {
 	with(ds_list_find_value(grabbed_ids,i)) {
-		if(!defeated) {
-				flowerslow = other.id;
+		if(!defeated && flowerslow == false) {
+				flowerslow = array(other.x+irandom_range(-2,2),other.y+irandom_range(-2,2));
 			}
 		}
 	}
 ds_list_clear(grabbed_ids);
 
+sound_white = max(0,sound_white-1);
+if(irandom(instance_number(obj_flower_wall)*100) = 1) {
+	var sound = choose(snd_floweridle,snd_floweridle2);
+	audio_sound_pitch(sound,random_range(0.55,1.65));
+	audio_play_sound_at(sound,x,y,z,25,50,0.5,false,4);
+	image_angle = random_range(-15,15);
+	image_yscale = 1.2;
+	sound_white = 5;
+}
+
+
 if(lifetime == 0) {
+	var sound = snd_flowersubmerge;
+	audio_sound_pitch(sound,random_range(0.55,1.65));
+	audio_play_sound_at(sound,x,y,z,80,10,0.6,false,2);
 	sprite_index = spr_submerge;
 	image_index = 0;
 }

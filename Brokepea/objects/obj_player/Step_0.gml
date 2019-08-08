@@ -7,6 +7,12 @@ if(gamefreeze != 0) {
 
 audio_listener_position(x,y,0);
 
+flowerboost = false;
+
+if(collision_circle(x,y,5,obj_flower_wall,false,true)) {
+	flowerboost = true;
+}
+
 if((sprite_index = spr_player_walk or sprite_index = spr_player_walk_carry) && image_tween == 0) {
 	audio_sound_pitch(snd_walk1,random_range(0.55,0.65));
 	audio_play_sound_at(snd_walk1,x,y,0,50,100,0.4,false,1);
@@ -41,6 +47,7 @@ move_spd = point_distance(0,0,right_press-left_press,down_press-up_press)*moveme
 
 t_axis_x = dcos(move_dir)*min(move_spd,movement_speed*enemy_slowdown*stone_boost);
 t_axis_y = -dsin(move_dir)*min(move_spd,movement_speed*enemy_slowdown*stone_boost);
+
 if(carry != noone) {
 	t_axis_x *= carry_speed;
 	t_axis_y *= carry_speed;
@@ -50,6 +57,12 @@ if(mouse_check_button_pressed(mb_right)) {
 	carry = noone;
 	carry_cooldown_time = carry_cooldown*2;
 }
+
+if(flowerboost) {
+	t_axis_x *= 1.1;
+	t_axis_y *= 1.1;
+}
+
 
 apply_movement();
 

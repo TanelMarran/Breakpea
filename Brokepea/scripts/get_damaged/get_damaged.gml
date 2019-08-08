@@ -10,7 +10,7 @@ if (count == 0) {
 		with(ds_list_find_value(_list,i)) {
 			if(!defeated) {
 				with(other) {
-					if(!place_meeting(x,y,obj_flower_wall)) {
+					if(!flowerboost) {
 						enemy_slowdown = min(enemy_slowdown_max,enemy_slowdown-0.1)
 					}
 				}

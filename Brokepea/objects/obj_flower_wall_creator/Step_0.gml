@@ -11,7 +11,6 @@ if(gamefreeze != 0) {
 		}
 	}
 }*/
-
 if(lifetime == 0) {
 	instance_destroy();
 }
@@ -20,6 +19,7 @@ lifetime--;
 
 if(lifetime % spawn_frequency == 0) {
 	create_flowerwall();
+	apply_camera_shake(5,5,0.2,0.2);
 }
 
 x += axis_x;
