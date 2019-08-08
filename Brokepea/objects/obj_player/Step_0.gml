@@ -14,8 +14,14 @@ if(collision_circle(x,y,5,obj_flower_wall,false,true)) {
 }
 
 if((sprite_index = spr_player_walk or sprite_index = spr_player_walk_carry) && image_tween == 0) {
-	audio_sound_pitch(snd_walk1,random_range(0.55,0.65));
-	audio_play_sound_at(snd_walk1,x,y,0,50,100,0.4,false,1);
+	var sound = snd_walk1;
+	var pitch = 1;
+	if(flowerboost == true) {
+		sound = snd_walk1;
+		pitch = 2;
+	}
+	audio_sound_pitch(sound,random_range(0.55*pitch,0.65*pitch));
+	audio_play_sound_at(sound,x,y,0,50,100,0.4,false,1);
 	instance_create_layer(x,y,"Instances",obj_smalldust);
 }
 

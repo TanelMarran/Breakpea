@@ -9,7 +9,12 @@ damage_flash = max(0,damage_flash-1);
 pursuing = false;
 depth = -y;
 
-event_inherited();
+//event_inherited();
+if(flowerslow != false) {
+	pushout(obj_enemy);
+} else {
+	pushout();
+}
 
 if(sprite_index = sprite_pursue && image_tween == 0) {
 	audio_sound_pitch(snd_walk1,random_range(0.65,0.75));

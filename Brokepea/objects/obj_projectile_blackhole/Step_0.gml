@@ -12,8 +12,6 @@ rot_angle += rot_speed*rot_modif;
 
 depth = -y;
 
-pushout();
-
 if(lifetime <= 0) {
 	pull_radius = 0;
 	active_radius -= max((max_radius-active_radius)*radius_speed,0.5);
