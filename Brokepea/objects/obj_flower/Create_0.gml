@@ -5,6 +5,7 @@ init_shadow(8,6);
 vine_radius = 200;
 range_alpha = 0;
 sprouted = false;
+image_xscale = choose(-1,1);
 z = 0;
 
 var sound = choose(snd_flowergrow1,snd_flowergrow2);
