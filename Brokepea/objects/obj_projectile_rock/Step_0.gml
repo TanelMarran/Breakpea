@@ -29,7 +29,9 @@ if(instance_place(x,y,obj_enemy)) {
 				instance_destroy(other);
 			}
 		}
-		instance_create_layer(x,y,"Instances",obj_rockfade);
+		with(instance_create_layer(x,y,"Instances",obj_rockfade)) {
+			axis_x = -other.axis_x*0.2;
+		}
 	}
 }
 

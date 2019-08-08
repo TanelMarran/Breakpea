@@ -1,6 +1,6 @@
 var variance = 10
 var n = 3;
-var dist = 10;
+var dist = 5;
 var angle = 360/n;
 var _x, _y;
 for(var i = 0; i < n; i++) {

@@ -9,8 +9,12 @@ apply_movement();
 x += axis_x;
 y += axis_y;
 
-image_alpha = image_alpha-0.01;
+image_alpha = image_alpha-0.04;
 image_angle += rot;
+
+if(z == 0) {
+	axis_z = 4;
+}
 
 if(image_alpha <= 0) {
 	instance_destroy();
