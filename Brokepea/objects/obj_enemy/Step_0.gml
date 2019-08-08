@@ -78,13 +78,15 @@ apply_movement();
 x += axis_x;
 y += axis_y;
 
-if (hp <= 0 && !defeated) {
+if (hp == 1 && defeated) {
 	var sound = choose(snd_monsterdefeat1,snd_monsterdefeat2);
 	audio_sound_pitch(sound,random_range(1.05,1.15));
 	audio_sound_gain(sound,1.5,10);
 	audio_play_sound_at(sound,x,y,0,50,100,0.4,false,1);
 	enemy_defeated();
+	hp = 0;
 }
+
 if(defeated and z <= 9 and axis_z < 0) {
 	defeat_puff();
 	instance_destroy();

@@ -12,7 +12,7 @@ frozen = max(0,frozen-1);
 	for(var i = 0; i < ds_list_size(damaged_ids); i++) {
 		with(ds_list_find_value(damaged_ids,i)) {
 			if(!defeated) {
-				var sound = choose(snd_arrowpierce1,snd_arrowpierce2);
+				var sound = choose(snd_arrowpierce1alt,snd_arrowpierce2alt);
 				audio_sound_pitch(sound,random_range(0.55+other.combo*0.08,0.60+other.combo*0.08));
 				audio_play_sound_at(sound,x,y,z,100,50,0.4,false,2);
 				other.combo++;
@@ -24,6 +24,7 @@ frozen = max(0,frozen-1);
 					other.frozen = other.froze_time_max;
 					apply_camera_shake(2,2,0.2,0.2);
 				}
+				apply_camera_shake(4,4,0.6,0.6);
 				arrowed = true;
 				arrowed_angle = other.aim_angle+random_range(-1,2);
 			}

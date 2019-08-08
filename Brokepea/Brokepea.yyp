@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "3782fbfe-ae4c-4985-b363-b6ed3a603927",
+            "Value": {
+                "id": "8cbeed38-dea2-43c1-a00e-92a8d23babf5",
+                "resourcePath": "sounds\\snd_arrowpierce1alt\\snd_arrowpierce1alt.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "38267dc1-e0c6-40c5-8a46-a76228221be9",
             "Value": {
                 "id": "a4d1fa25-f0a0-4aba-8a80-b5e9d5c6c782",
@@ -1396,6 +1404,14 @@
                 "id": "bb7f973e-5d4e-4c05-80d9-3cd086bc5e58",
                 "resourcePath": "views\\d884c55b-a18e-454a-8cc5-8729b65b0d38.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da357043-2a1e-4dc7-bea5-7c0e5fd4049b",
+            "Value": {
+                "id": "b56c5fcd-235e-4b4d-8b11-3953952f2f29",
+                "resourcePath": "sounds\\snd_arrowpierce2alt\\snd_arrowpierce2alt.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -31,7 +31,7 @@ if(place_meeting(x,y,obj_enemy) or place_meeting(obj_player.x,obj_player.y,obj_e
 					if (other.frozen == false) {
 						gamefreeze = 5;
 						other.frozen = true;
-						apply_camera_shake(3,3,0.2,0.2);
+						apply_camera_shake(5,5,0.2,0.2);
 					}
 			}
 		}
