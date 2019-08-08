@@ -24,9 +24,9 @@ if(place_meeting(x,y,obj_pushout) && grabbing == false) {
 }
 grabbing = false;
 
-instance_place_list(x,y,obj_enemy,grabbed_ids,false);
-for(var i = 0; i < min(ds_list_size(grabbed_ids),15); i++) {
-	with(ds_list_find_value(grabbed_ids,i)) {
+if(place_meeting(x,y,obj_enemy)) {
+	var grabbed = instance_place(x,y,obj_enemy);
+	with(grabbed) {
 			if(!defeated && flowerslow == false) {
 					flowerslow = array(other.x+irandom_range(-2,2),other.y+irandom_range(-2,2));
 			}
@@ -34,9 +34,8 @@ for(var i = 0; i < min(ds_list_size(grabbed_ids),15); i++) {
 				other.image_yscale *= 1.4;
 			}
 			other.grabbing = true;
-		}
-	}
-ds_list_clear(grabbed_ids);
+		}	
+}
 
 sound_white = max(0,sound_white-1);
 if(irandom(instance_number(obj_flower_wall)*(10+(lifetime/max_lifetime)*70)) = 1) {
