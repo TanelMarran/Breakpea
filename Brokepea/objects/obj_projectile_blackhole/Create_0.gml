@@ -17,6 +17,7 @@ rot_increase_amount = 8;
 rot_speed = 1;
 emitter = audio_emitter_create();
 audio_emitter_position(emitter,x,y,0);
+audio_emitter_falloff(emitter,160,320,1.1);
 audio_play_sound_on(emitter,snd_gravity,false,2);
 
 

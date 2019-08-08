@@ -9,7 +9,7 @@ apply_movement();
 x += axis_x;
 y += axis_y;
 
-image_alpha = image_alpha-0.1;
+image_alpha = image_alpha-0.01;
 image_angle += rot;
 
 if(image_alpha <= 0) {

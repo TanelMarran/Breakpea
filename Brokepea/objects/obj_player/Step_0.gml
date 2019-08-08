@@ -48,7 +48,7 @@ move_spd = point_distance(0,0,right_press-left_press,down_press-up_press)*moveme
 t_axis_x = dcos(move_dir)*min(move_spd,movement_speed*enemy_slowdown*stone_boost);
 t_axis_y = -dsin(move_dir)*min(move_spd,movement_speed*enemy_slowdown*stone_boost);
 
-if(carry != noone) {
+if(carry != noone && carry.object_index != obj_rock) {
 	t_axis_x *= carry_speed;
 	t_axis_y *= carry_speed;
 }

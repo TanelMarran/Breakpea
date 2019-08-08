@@ -13,7 +13,7 @@ frozen = max(0,frozen-1);
 		with(ds_list_find_value(damaged_ids,i)) {
 			if(!defeated) {
 				var sound = choose(snd_arrowpierce1,snd_arrowpierce2);
-				audio_sound_pitch(sound,random_range(0.75+other.combo*0.05,0.80+other.combo*0.05));
+				audio_sound_pitch(sound,random_range(0.55+other.combo*0.08,0.60+other.combo*0.08));
 				audio_play_sound_at(sound,x,y,z,100,50,0.4,false,2);
 				other.combo++;
 				add_points(defeatpoints*min(5,1+floor(other.combo/3)));

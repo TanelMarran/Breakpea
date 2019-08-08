@@ -39,10 +39,10 @@ for(var i = 0; i < min(ds_list_size(grabbed_ids),15); i++) {
 ds_list_clear(grabbed_ids);
 
 sound_white = max(0,sound_white-1);
-if(irandom(instance_number(obj_flower_wall)*30) = 1) {
+if(irandom(instance_number(obj_flower_wall)*(10+(lifetime/max_lifetime)*70)) = 1) {
 	var sound = choose(snd_floweridle,snd_floweridle2);
 	audio_sound_pitch(sound,random_range(0.55,1.65));
-	audio_play_sound_at(sound,x,y,z,25,50,0.5,false,4);
+	audio_play_sound_at(sound,x,y,z,100,160,1.1,false,4);
 	image_angle = random_range(-15,15);
 	image_yscale *= 1.5;
 	image_xscale *= 1.5;

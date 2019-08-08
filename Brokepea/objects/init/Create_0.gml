@@ -4,6 +4,7 @@ macros();
 
 surface_resize(application_surface, 320, 320);
 randomize();
+audio_falloff_set_model(audio_falloff_linear_distance);
 
 global.points = 0;
 global.highscore = 0;
