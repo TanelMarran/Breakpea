@@ -9,4 +9,5 @@ for(var i = 0; i < ds_list_size(trail)-1; i++) {
 	draw_set_alpha(1);
 }
 draw_shadow();
+image_angle = aim_angle;
 draw_sprite_ext(sprite_index,image_index,x+random_range(-2,2),y-z+random_range(-2,2),1,1,aim_angle,c_white,1);

@@ -9,7 +9,7 @@ with(obj_player) {
 		axis_y = _axis_y;
 		acc_amount = 0.1;
 		axis_z = 6;
-		audio_sound_pitch(snd_glassthrow,random_range(0.85,1.15));
-		audio_play_sound_at(snd_glassthrow,x,y,z,100,50,0.4,false,2);
+		audio_sound_pitch(snd_seedthrow,random_range(0.85,1.15));
+		audio_play_sound_at(snd_seedthrow,x,y,z,100,50,0.4,false,2);
 	}
 }

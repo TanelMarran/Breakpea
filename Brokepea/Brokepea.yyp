@@ -1375,6 +1375,14 @@
             }
         },
         {
+            "Key": "dd5f1c96-0810-4eca-9cd7-b76c83d915c8",
+            "Value": {
+                "id": "30fbe81f-beca-4839-a5a8-0b1f5badfd78",
+                "resourcePath": "sounds\\snd_seedthrow\\snd_seedthrow.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "dda65900-b2be-4715-ace4-0ee203af684d",
             "Value": {
                 "id": "798eaa7b-da00-48bd-bd59-082d4253e481",

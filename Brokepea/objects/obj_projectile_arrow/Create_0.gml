@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-init_shadow(sprite_width*0.8,sprite_width*0.8);
+init_shadow(sprite_width*0.3,sprite_width*0.3);
 fly_time = 30;
 acc_amount = 0.2;
 deacc_amount = 0.2;
