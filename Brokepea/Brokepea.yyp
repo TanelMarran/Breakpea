@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "a4845249-1344-4dbd-a4c0-498038cb51c9",
+            "Value": {
+                "id": "701b8fc5-32dd-4aca-a7bd-773a3a1e9bf1",
+                "resourcePath": "shaders\\shd_whitefade\\shd_whitefade.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "a586b21a-2bb4-4989-b4d8-f805972af1ba",
             "Value": {
                 "id": "e7a06653-8280-4f36-9a4b-7bc4939b8860",

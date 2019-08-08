@@ -25,4 +25,6 @@ if(collide) {
 var sound = choose(snd_flowergrow1,snd_flowergrow2);
 audio_sound_pitch(sound,random_range(0.55,1.65));
 audio_play_sound_at(sound,x,y,z,80,10,0.6,false,2);
-sound_white = 0;
+
+uniform_Percent = shader_get_uniform(shd_whitefade,"Percent");
+bloom_white = 0;
