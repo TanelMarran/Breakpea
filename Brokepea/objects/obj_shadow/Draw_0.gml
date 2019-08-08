@@ -20,7 +20,7 @@ if(carry_index != noone) {
 cx = obj_player.x+lengthdir_x(aim_crosshair_len*aim_crosshair_size,aim_crosshair_dir_act);
 cy = obj_player.y+lengthdir_y(aim_crosshair_len*aim_crosshair_size,aim_crosshair_dir_act);
 
-var nmb_of_points = 6;
+var nmb_of_points = 8;
 var _x, _y;
 draw_set_color(aim_crosshair_color);
 for(var i = 0; i < nmb_of_points; i++) {

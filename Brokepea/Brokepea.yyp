@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "05e7e4ab-3a75-4a07-beed-e74a6d4dd0af",
+            "Value": {
+                "id": "d9ccd86f-2bac-4cb4-8e84-cacb3213ee0f",
+                "resourcePath": "sprites\\spr_bigflower_submerge\\spr_bigflower_submerge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "066ace6d-b503-4481-a240-9508d9b2d85c",
             "Value": {
                 "id": "03836998-7e8f-487b-9446-174428f0ed67",
@@ -236,6 +244,14 @@
                 "id": "236ce5d4-1f2b-4ea0-9261-1a95dd34fe45",
                 "resourcePath": "objects\\obj_pickup\\obj_pickup.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "25e9bc47-035d-42c0-80f9-439be77808dc",
+            "Value": {
+                "id": "b43de4f8-e12d-4262-887e-bd8ea7e649b4",
+                "resourcePath": "views\\25e9bc47-035d-42c0-80f9-439be77808dc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1015,6 +1031,14 @@
             }
         },
         {
+            "Key": "a6b72ffa-5e46-434e-b736-156e06eef109",
+            "Value": {
+                "id": "ef21ec23-2d8f-473c-a6ef-0798ddd2cd02",
+                "resourcePath": "sprites\\spr_bigflower_idle\\spr_bigflower_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a73ae5bd-3c8e-4b67-ba08-1aa8a222757e",
             "Value": {
                 "id": "dfbc44ba-63e8-4bcb-9b32-aaccb3507af8",
@@ -1076,6 +1100,14 @@
                 "id": "1c37f6fb-9208-4d44-bd8c-2908c861b477",
                 "resourcePath": "scripts\\pushout\\pushout.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ae2fb69b-0aec-4bda-8962-8c8f312e0e31",
+            "Value": {
+                "id": "7fba81c9-ae58-4b20-8d42-7f766f462679",
+                "resourcePath": "sprites\\spr_bigflower_sprout\\spr_bigflower_sprout.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
