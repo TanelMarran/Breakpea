@@ -2,7 +2,7 @@
 // You can write your code in this editor
 lifetime = 60*20;
 init_shadow(8,6);
-vine_radius = 200;
+vine_radius = 250;
 range_alpha = 0;
 sprouted = false;
 image_xscale = choose(-1,1);

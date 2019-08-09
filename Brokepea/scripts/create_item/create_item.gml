@@ -5,11 +5,12 @@ if(instance_number(obj_pickup) < amount_of_items) {
 		c1 = 32; //Rock
 		c2 = 25; //Sword
 		c3 = 25; //Bow
-		c4 = 17; //Eightball
+		c4 = 15; //Eightball
 		c5 = 20; //Potion
-		c6 = 17; //Seed
+		c6 = 14*(global.points > 750); //Seed
 		var randint = irandom(c1+c2+c3+c4+c5+c6);
 		var needed = 0;
+		var object = obj_rock;
 		
 		if(randint < c1) {
 			object = obj_rock;
@@ -26,7 +27,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 		} else if (randint < c1+c2+c3+c4+c5) {
 			object = obj_potion;
 			needed = 4;
-		} else {
+		} else if (randint < c1+c2+c3+c4+c5+c6) {
 			object = obj_seed;
 			needed = 3;
 		}
@@ -51,7 +52,6 @@ if(instance_number(obj_pickup) < amount_of_items) {
 				}
 			}
 			ds_list_destroy(_list);
-
 			instance_create_layer(randx,randy,"Instances",object);
 		}
 		break;

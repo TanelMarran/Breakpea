@@ -4,8 +4,10 @@
 // Inherit the parent event
 init_movement();
 init_shadow(sprite_width,sprite_width);
-//z = 13;
-//axis_z = 3;
-//z_gravity = 0.3;
+target_x = x;
+target_y = y;
+z_gravity = 0.3;
 image_angle = 1;
 draw_other = false;
+target_x = x;
+target_y = y;

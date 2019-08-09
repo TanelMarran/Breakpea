@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-max_lifetime = 60*30;
+max_lifetime = 60*50;
 lifetime = max_lifetime;
 init_shadow(10,10);
 vine_radius = 100;

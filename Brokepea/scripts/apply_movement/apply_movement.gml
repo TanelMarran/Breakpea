@@ -1,18 +1,12 @@
 //Apply movement
 
-var x_dist = t_axis_x-axis_x
-var y_dist = t_axis_y-axis_y
+var dir = point_direction(axis_x,axis_y,t_axis_x,t_axis_y);
+var len = point_distance(axis_x,axis_y,t_axis_x,t_axis_y);
 
-var absx = abs(x_dist);
-var absy = abs(y_dist);
+var minacc = min(len,acc_amount);
 
-var x_ratio = absx/(absx+absy+0.001);
-var y_ratio = 1-x_ratio;
-
-var acc = acc_amount;
-
-var x_add = min(absx,acc*x_ratio)*sign(x_dist)
-var y_add = min(absy,acc*y_ratio)*sign(y_dist)
+var x_add = lengthdir_x(minacc,dir);
+var y_add = lengthdir_y(minacc,dir);
 
 axis_x = axis_x+x_add
 axis_y = axis_y+y_add

@@ -17,6 +17,7 @@ if(obj_player.carry != noone) {
 	carry_index = noone;
 	aim_crosshair_size += -aim_crosshair_size*0.3;
 }
-trace(aim_crosshair_size);
+
+aim_crosshair_size = 1;
 
 aim_angle++;
