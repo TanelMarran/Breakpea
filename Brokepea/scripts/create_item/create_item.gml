@@ -7,7 +7,7 @@ if(instance_number(obj_pickup) < amount_of_items) {
 		c3 = 25; //Bow
 		c4 = 15; //Eightball
 		c5 = 20; //Potion
-		c6 = 14*(global.points > 750); //Seed
+		c6 = 14*(global.points > 500); //Seed
 		var randint = irandom(c1+c2+c3+c4+c5+c6);
 		var needed = 0;
 		var object = obj_rock;

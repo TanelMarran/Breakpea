@@ -1,6 +1,6 @@
 with(obj_player) {
 	var len = 2.2;
-	var dir = obj_shadow.aim_crosshair_dir;
+	var dir = point_direction(x,y,mouse_x,mouse_y+23);
 	var _axis_x = lengthdir_x(len,dir);
 	var _axis_y = lengthdir_y(len,dir);
 	with(instance_create_layer(x+_axis_x,y+_axis_y,"Instances",obj_projectile_seed)) {
